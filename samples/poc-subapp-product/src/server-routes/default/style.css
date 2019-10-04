@@ -1,0 +1,56 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+
+@font-face {
+  font-family: "Bogle";
+  src: url("https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Regular.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bogle-Bold";
+  src: url("https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Bold.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Bogle;
+}
+
+body .MuiTypography-caption {
+  font-family: Bogle;
+}
+
+body .MuiTypography-subtitle2 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-body1 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h1 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h2 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h3 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h4 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h5 {
+  font-family: Bogle;
+}
+
+strong {
+  font-family: Bogle-Bold;
+}
