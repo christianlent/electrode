@@ -1,0 +1,82 @@
+{
+  "name": "poc-subapp-product",
+  "version": "0.0.1",
+  "description": "SubApp POC Walmart product page",
+  "homepage": "http://test",
+  "author": {
+    "name": "Christian Lent",
+    "email": "christian@lent.us",
+    "url": "https://github.com/christianlent"
+  },
+  "contributors": [],
+  "files": [
+    "server",
+    "src",
+    "lib",
+    "dist"
+  ],
+  "main": "lib/server/index.js",
+  "keywords": [
+    "test",
+    "electrode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "test/test-app"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 5"
+  },
+  "scripts": {
+    "dev": "clap dev",
+    "test": "clap check",
+    "build": "clap build"
+  },
+  "dependencies": {
+    "@hapi/inert": "^5.2.2",
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.0.0",
+    "@material-ui/lab": "4.0.0-alpha.28",
+    "electrode-archetype-opt-preact": "^1.0.0",
+    "electrode-archetype-react-app": "^6.3.0",
+    "electrode-confippet": "^1.5.0",
+    "electrode-server": "^3.0.0",
+    "electrode-static-paths": "^3.0.0",
+    "node-fetch": "^2.6.0",
+    "react": "^16.8.3",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.4",
+    "redux-bundler": "^26.0.0",
+    "redux-bundler-react": "^1.2.0",
+    "subapp-redux": "../../packages/subapp-redux",
+    "subapp-server": "../../packages/subapp-server",
+    "subapp-web": "../../packages/subapp-web"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-app-dev": "^6.3.0",
+    "electrode-archetype-opt-critical-css": "^1.0.4",
+    "electrode-archetype-opt-eslint": "^1.0.4",
+    "electrode-archetype-opt-flow": "^1.0.3",
+    "electrode-archetype-opt-jest": "^1.0.4",
+    "electrode-archetype-opt-karma": "^2.0.8",
+    "electrode-archetype-opt-less": "^1.0.3",
+    "electrode-archetype-opt-mocha": "^1.0.4",
+    "electrode-archetype-opt-phantomjs": "^1.0.3",
+    "electrode-archetype-opt-postcss": "^1.0.5",
+    "electrode-archetype-opt-pwa": "^1.0.7",
+    "electrode-archetype-opt-sinon": "^1.0.4",
+    "electrode-archetype-opt-stylus": "^1.0.3",
+    "electrode-archetype-opt-typescript": "^1.0.4"
+  },
+  "fyn": {
+    "dependencies": {
+      "electrode-archetype-react-app": "../../packages/electrode-archetype-react-app"
+    },
+    "devDependencies": {
+      "electrode-archetype-react-app-dev": "../../packages/electrode-archetype-react-app-dev"
+    }
+  },
+  "optionalDependencies": {}
+}

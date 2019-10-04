@@ -15,7 +15,7 @@ Object.defineProperty(options, "AppMode", {
   get() {
     if (!AppMode) {
       const makeAppMode = require("../lib/app-mode");
-      AppMode = makeAppMode(options.prodDir, options.reactLib);
+      AppMode = makeAppMode(options.prodDir, options.options.reactLib);
     }
 
     return AppMode;
