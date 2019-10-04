@@ -1,0 +1,58 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+
+@font-face {
+  font-family: "Bogle";
+  src: url("https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Bold.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Bogle;
+}
+
+.navbar {
+  background-color: #041e42;
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 0;
+}
+
+.navbar .glyphicon {
+  color: white;
+  font-size: 24px;
+}
+
+.navbar img {
+  height: 30px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.navbar .glyphicon-menu-hamburger {
+  color: #3ec5e6;
+  margin-right: 50px;
+}
+
+.navbar .nav li a {
+  padding: 5px 15px;
+}
+
+.navbar input {
+  border-radius: 0px;
+  margin-top: 2px;
+  width: 300px;
+}
+
+/* Remove the jumbotron's default bottom margin */
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
