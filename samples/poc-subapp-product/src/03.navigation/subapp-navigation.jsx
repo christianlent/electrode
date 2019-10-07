@@ -7,7 +7,6 @@ const useStyles = makeStyles({
   root: {
     borderBottom: "1px solid #e6e7e8",
     paddingLeft: 5,
-    borderBottom: "4px solid transparent",
     boxShadow: "0 1px 0 0 rgba(0,0,0,.07)",
   },
   tab: {
@@ -44,7 +43,7 @@ const items = [
 const Component = (props) => {
   const classes = useStyles();
   return (
-    <Tabs className={classes.root} variant="fullWidth" value={0}>
+    <Tabs className={classes.root} variant="fullWidth" value={0} indicatorColor="none">
       {items.map((item, index) => 
         <Tab
           className={classes.tab}

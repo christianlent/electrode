@@ -70,7 +70,6 @@ const Template = (
           timestamp
           elementId="subapp-product"
           name="Product"
-          serverSideRendering
         />
 
         <Require _id="subapp-web/lib/start" />
