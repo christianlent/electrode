@@ -16,11 +16,7 @@ const useStyles = makeStyles({
   },
   gallery: {
     maxHeight: "50%",
-    maxWidth: "35%",
-    display: "flex",
-    flexDirection: "column",
-    flexBasis: "100%",
-    flex: 1,
+    maxWidth: "75%",
   },
 });
 

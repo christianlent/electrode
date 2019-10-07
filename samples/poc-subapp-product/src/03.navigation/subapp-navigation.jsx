@@ -1,9 +1,10 @@
 import React from "react";
-import { reduxLoadSubApp } from "subapp-redux";
+import { loadSubApp } from "subapp-web";
 import { Tabs, Tab } from "@material-ui/core";
 import { makeStyles } from '@material-ui/styles';
+import { makeImportant } from "../components/global";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(makeImportant({
   root: {
     borderBottom: "1px solid #e6e7e8",
     paddingLeft: 5,
@@ -24,7 +25,7 @@ const useStyles = makeStyles({
       color: "black",
     }
   }
-});
+}));
 
 const items = [
   { label: "All Things Home", link: "https://www.walmart.com/cp/home/4044?povid=4044+%7C+2018-04-30+%7C+AllThingsHomeNavbar" },
@@ -57,7 +58,7 @@ const Component = (props) => {
   );
 };
 
-export default reduxLoadSubApp({
+export default loadSubApp({
   name: "Navigation",
   Component,
 });

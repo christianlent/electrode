@@ -9,10 +9,6 @@ const Template = (
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        />
         <Token _id="META_TAGS" />
         <Token _id="PAGE_TITLE" />
         <Require _id="subapp-web/lib/init" />
@@ -70,6 +66,30 @@ const Template = (
           timestamp
           elementId="subapp-product"
           name="Product"
+        />
+
+        <Require
+          _id="subapp-web/lib/load"
+          _concurrent
+          timestamp
+          elementId="subapp-offers"
+          name="Offers"
+        />
+
+        <Require
+          _id="subapp-web/lib/load"
+          _concurrent
+          timestamp
+          elementId="subapp-about"
+          name="About"
+        />
+
+        <Require
+          _id="subapp-web/lib/load"
+          _concurrent
+          timestamp
+          elementId="subapp-footer"
+          name="Footer"
         />
 
         <Require _id="subapp-web/lib/start" />

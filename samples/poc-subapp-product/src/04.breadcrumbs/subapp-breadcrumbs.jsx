@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
-import { reduxLoadSubApp } from "subapp-redux";
+import { loadSubApp } from "subapp-web";
 import { Breadcrumbs, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { fetchProduct } from "../components/api";
+import { makeImportant } from "../components/global";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(makeImportant({
   breadcrumbs: {
     height: 40,
     fontFamily: "Bogle",
@@ -15,7 +16,7 @@ const useStyles = makeStyles({
   here: {
     color: "black"
   }
-});
+}));
 
 const Component = (props) => {
   const classes = useStyles();
@@ -41,7 +42,7 @@ const Component = (props) => {
   );
 };
 
-export default reduxLoadSubApp({
+export default loadSubApp({
   name: "Breadcrumbs",
   Component,
 });

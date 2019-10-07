@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { reduxLoadSubApp } from "subapp-redux";
+import { loadSubApp } from "subapp-web";
 import { Switch } from "@material-ui/core";
 import PersonPin from '@material-ui/icons/PersonPin';
 import Info from '@material-ui/icons/Info';
 import { makeStyles } from '@material-ui/styles';
 import nextDayDelivery from "./next-day-delivery.svg";
+import { makeImportant } from "../components/global";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(makeImportant({
   info: {
     color: "#378090",
     margin: "0 15px 0 5px",
@@ -28,17 +29,10 @@ const useStyles = makeStyles({
     color: "#378090",
     float: "right",
   },
-  toggleButton: {
-    marginLeft: 10,
-    marginRight: 10,
-    padding: 0,
-  },
-  toggle: {
-  },
   zip: {
     textDecoration: "underline",
   }
-});
+}));
 
 function minutesUntilDeadline() {
   var deadline = new Date();
@@ -67,13 +61,12 @@ const Component = (props) => {
     <div className={classes.root}>
       <span className={classes.middle}> </span>
       <Switch
-        className={classes.toggle}
         color="primary"
         checked={toggled}
         onChange={() => setToggle(!toggled)}
         value=""
       />
-      <img src={nextDayDelivery} />
+      <img src={nextDayDelivery} className={classes.middle} />
       <PersonPin className={classes.middle} fontSize="large" />
       <span className={classes.middle}>Delivering to </span>
       <span className={`${classes.zip} ${classes.middle}`}>94066</span>
@@ -98,7 +91,7 @@ const Component = (props) => {
   );
 };
 
-export default reduxLoadSubApp({
+export default loadSubApp({
   name: "Shipping",
   Component,
 });

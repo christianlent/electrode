@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { reduxLoadSubApp } from "subapp-redux";
-import { Fab, FormControl, InputLabel, Select, MenuItem, Typography } from '@material-ui/core';
+import { loadSubApp } from "subapp-web";
+import { Fab, FormControl, Grid, InputLabel, Select, MenuItem, Typography } from '@material-ui/core';
+import CardGiftcard from '@material-ui/icons/CardGiftcard';
+import HouseOutlined from '@material-ui/icons/HouseOutlined';
+import LocalShippingOutlined from '@material-ui/icons/LocalShippingOutlined';
+import Menu from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/styles';
-import { fetchProduct } from "../components/api2";
+import { fetchProduct } from "../components/api";
 import Rating from '@material-ui/lab/Rating';
 import Gallery from "../components/gallery";
+import logo from "../components/logo.svg";
+import { makeImportant } from "../components/global";
 
 function slugify(text) {
   return text.toString().toLowerCase()
@@ -15,7 +21,7 @@ function slugify(text) {
     .replace(/-+$/, '');
 }
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(makeImportant({
   add: {
     backgroundColor: "#0065ff",
     color: "white",
@@ -24,9 +30,27 @@ const useStyles = makeStyles({
     marginTop: 25,
     textTransform: "initial",
   },
+  button: {
+    backgroundColor: "white",
+    border: "1px solid black",
+    boxShadow: "none",
+    color: "black",
+    fontFamily: "Bogle !important",
+    height: 28,
+    marginTop: 25,
+    textTransform: "initial",
+  },
   cost: {
     fontFamily: "Bogle !important",
     marginTop: 25,
+  },
+  descriptor: {
+    marginTop: "-15px",
+  },
+  detailIcon: {
+    display: "inline-block",
+    marginRight: 10,
+    width: 20,
   },
   product: {
     display: "flex",
@@ -43,6 +67,17 @@ const useStyles = makeStyles({
     color: "black",
     textDecoration: "underline",
   },
+  main: {
+    marginTop: 25,
+  },
+  section: {
+    borderBottom: "1px solid #e6e7e8",
+    paddingBottom: 10,
+    paddingTop: 10,
+  },
+  separator: {
+    marginLeft: 25,
+  },
   text: {
     fontFamily: "Bogle !important",
     paddingBottom: 25,
@@ -53,7 +88,7 @@ const useStyles = makeStyles({
     flexDirection: "column",
     flexBasis: "100%",
   }
-});
+}));
 
 const Component = (props) => {
   const classes = useStyles();
@@ -69,9 +104,11 @@ const Component = (props) => {
   const offer = result.payload.offers[product.offers[0]];
   const { price } = offer.pricesInfo.priceMap.CURRENT;
   return (
-    <div className={classes.product}>
-      <Gallery result={result} />
-      <div className={classes.vitals}>
+    <Grid container justify="center" className={classes.main}>
+      <Grid item xs={12} md={4} lg={4}>
+        <Gallery result={result} />
+      </Grid>
+      <Grid item xs={12} md={4} lg={4}>
         <Typography variant="h5" className={classes.text}>
           {product.productAttributes.productName}
         </Typography>
@@ -103,12 +140,46 @@ const Component = (props) => {
         <Fab variant="extended" className={classes.add}>
           Add to Cart
         </Fab>
-      </div>
-    </div>
+        <div className={classes.section}>
+          <LocalShippingOutlined className={classes.detailIcon} />
+          <strong className={classes.descriptor}>Free 2-day delivery</strong>
+          <p>
+            <span className={classes.detailIcon}>&nbsp;</span>
+            Arrives by Tue, Oct 8
+          </p>
+        </div>
+        <div className={classes.section}>
+          <HouseOutlined className={classes.detailIcon} />
+          <strong className={classes.descriptor}>Free pickup today</strong>
+          <p>
+            <span className={classes.detailIcon}>&nbsp;</span>
+            <strong>In stock at</strong> Union City, 30600 Dyer St
+          </p>
+        </div>
+        <div className={classes.section}>
+          <a href="#" className={classes.link}>More delivery &amp; pickup options</a>
+        </div>
+        <div className={classes.section}>
+          <img src={logo} className={classes.detailIcon} />
+          Sold &amp; shipped by Walmart
+        </div>
+        <div className={classes.section}>
+          <Menu className={classes.detailIcon} />Add to List
+          <CardGiftcard className={classes.separator} />Add to Registry
+        </div>
+        <div className={classes.section}>
+          <Typography variant="h5">Product Highlights</Typography>
+          <div dangerouslySetInnerHTML={{__html: product.productAttributes.shortDescription}} />
+          <Fab variant="extended" className={classes.button}>
+            See More Info
+          </Fab>
+        </div>
+      </Grid>
+    </Grid>
   );
 };
 
-export default reduxLoadSubApp({
+export default loadSubApp({
   name: "Product",
   Component,
 });

@@ -1,4 +1,650 @@
-const sample = {
+const rickAndMorty = {
+    "status": "OK",
+    "errors": [],
+    "header": {
+        "headerAttributes": {
+            "tenant": {
+                "WM_BU_ID": "0",
+                "WM_MART_ID": "0",
+                "WM_VERTICAL_ID": "0",
+                "WM_CHANNEL_ID": "0",
+                "WM_LOCALE_ID": "en_US"
+            },
+            "server": {
+                "sha": "d22535e71f54f0c0c727ab012c4931792a8f1928",
+                "ver": "125.0.0",
+                "name": "app-706344115-43-802180480",
+                "dc": "prod-az-southcentralus-14",
+                "env": "prod-a"
+            },
+            "context": {
+                "access": true,
+                "device": "UNSPECIFIED",
+                "browser": "BROWSER",
+                "topTxId": "8cc444b9-ed-16da83ee1bb000"
+            },
+            "timing": {
+                "total": {
+                    "elapsed": 84,
+                    "active": 84,
+                    "threads": 2,
+                    "futures": 22,
+                    "delay": 0,
+                    "orchestrate": 1
+                }
+            }
+        }
+    },
+    "payload": {
+        "selected": {
+            "product": "4RRTMLAUWPLF"
+        },
+        "products": {
+            "4RRTMLAUWPLF": {
+                "usItemId": "38198856",
+                "productId": "4RRTMLAUWPLF",
+                "upc": "883929374328",
+                "wupc": "0088392937432",
+                "primaryProductId": "4RRTMLAUWPLF",
+                "status": "FETCHED",
+                "productPublishStatus": "PUBLISHED",
+                "offers": [
+                    "53ED50954D26475D8EF53B4709B2AF3C"
+                ],
+                "images": [
+                    "C16ECAEFDD9E41DB81C08E47947EF367",
+                    "C84805C2C0CF42A1BCCD42C71DBC1535"
+                ],
+                "productAttributes": {
+                    "productName": "Rick and Morty: Season 1 (DVD)",
+                    "shortDescription": "<ul><li>Rick & Morty: The Complete First Season [DVD]</li><li>CARTOON NETWORK</li><li>Movies</li></ul>",
+                    "detailedDescription": "<br /><b>Rick And Morty The Complete First Season:</b><br /><ul><li>Includes: animatics, behind the scenes, deleted scenes and episode commentaries</li><li>Subtitles: English SDH (subtitles for deaf and hearing impaired)</li><li>Comedy DVD with 11 episodes</li></ul>",
+                    "manufacturerProductId": "DT437356D",
+                    "manufacturerName": "Cartoon Network",
+                    "classType": "REGULAR",
+                    "productCategory": {
+                        "categoryPath": "Home Page/Movies & TV Shows/TV Shows/Action & Adventure TV Shows",
+                        "categoryPathId": "0:4096:530719:531638",
+                        "path": [
+                            {
+                                "name": "Movies & TV Shows",
+                                "url": "/cp/4096"
+                            },
+                            {
+                                "name": "TV Shows",
+                                "url": "/cp/530719"
+                            },
+                            {
+                                "name": "Action & Adventure TV Shows",
+                                "url": "/cp/531638"
+                            }
+                        ]
+                    },
+                    "productClassification": {},
+                    "legalContent": {
+                        "legalAttributes": [
+                            {
+                                "legalAttributeType": "MPAA_RATING",
+                                "legalAttributeValue": "Unrated"
+                            }
+                        ]
+                    },
+                    "movieContent": {
+                        "movieAttributes": [
+                            {
+                                "movieAttributeType": "MPAA_RATING",
+                                "movieAttributeValue": "Unrated"
+                            },
+                            {
+                                "movieAttributeType": "ACTORS",
+                                "movieAttributeValue": "Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke, Kari Wahlgren, Phil Hendrie, Brandon Johnson"
+                            },
+                            {
+                                "movieAttributeType": "RELEASE_DATE",
+                                "movieAttributeValue": "2014-10-07T07:00:00+0000"
+                            },
+                            {
+                                "movieAttributeType": "GENRE",
+                                "movieAttributeValue": "Comedy"
+                            },
+                            {
+                                "movieAttributeType": "LANGUAGES",
+                                "movieAttributeValue": "ENG"
+                            },
+                            {
+                                "movieAttributeType": "SYNOPSIS",
+                                "movieAttributeValue": "From comedic masterminds Dan Harmon and Justin Roiland comes Rick and Morty: The Complete First Season Blu-ray and DVD. Adult Swim&#39;s newest series follows the adventures of mad scientist Rick Sanchez, who returns after 20 years to live with his daughter, her husband, and their children Morty and Summer. All 11 episodes of the hilariously frantic comedy will be available on Blu-ray and DVD, featuring a unique slip case designed by the show creators themselves."
+                            },
+                            {
+                                "movieAttributeType": "STUDIO_AND_PRODUCTION_COMPANY",
+                                "movieAttributeValue": "Cartoon Network"
+                            },
+                            {
+                                "movieAttributeType": "NUMBER_OF_CUST_RATINGS",
+                                "movieAttributeValue": "13"
+                            },
+                            {
+                                "movieAttributeType": "DURATION",
+                                "movieAttributeValue": "242 min"
+                            }
+                        ]
+                    },
+                    "vuduAttributes": {
+                        "contentType": "Series",
+                        "duration": "242 min",
+                        "releaseDate": "2014-10-07T07:00:00+0000",
+                        "studio": "Cartoon Network",
+                        "language": "ENG",
+                        "movieGenre": "Comedy",
+                        "mpaaRating": "Unrated",
+                        "tvShowGenre": "Animation & Cartoons",
+                        "tvRating": "Not Rated",
+                        "synopsis": "From comedic masterminds Dan Harmon and Justin Roiland comes Rick and Morty: The Complete First Season Blu-ray and DVD. Adult Swim&#39;s newest series follows the adventures of mad scientist Rick Sanchez, who returns after 20 years to live with his daughter, her husband, and their children Morty and Summer. All 11 episodes of the hilariously frantic comedy will be available on Blu-ray and DVD, featuring a unique slip case designed by the show creators themselves.",
+                        "audioDecoder": "Dolby Digital 5.1"
+                    },
+                    "brand": "Warner Bros.",
+                    "rhPath": "20000:26000:26002:26125:26522",
+                    "canonicalUrl": "/ip/Rick-and-Morty-Season-1-DVD/38198856?athpgid=athenaItempage_38198856&athctxid&athcpid=38198856&atlmtid=BuyTogetherValue&athcgid&athena=true&athieid=v0&athbktid&athstid=CS002&athguid=67750d91-b67-16da83eea3c9e4",
+                    "averageRating": 4.4,
+                    "numberOfReviews": 13,
+                    "primaryShelfId": "531638",
+                    "ironbankCategory": "Movies",
+                    "sku": "00883929374328",
+                    "karfMaximumOrderQuantity": "12",
+                    "merchandiseCommerceNumber": "4648770",
+                    "pricePerUnitUom": "Each",
+                    "pricePerUnitQuantity": "1.0000",
+                    "features": "<li>TV</li><li>Run Time:</li><li>Release Date: 10/7/2014</li></ul>",
+                    "primaryShelf": "Action & Adventure TV Shows",
+                    "karfMaximumQuantityFactor": "1",
+                    "productTaxCode": "2038710",
+                    "karfIsAlcohol": "No",
+                    "karfSalesUnit": "Each",
+                    "assembledInCountryOfOrigin": "United States",
+                    "hazardousMaterialsIndicator": "N",
+                    "controlledSubstance": false,
+                    "cpscRegulatedIndicator": "Y",
+                    "pesticideIndicator": "N",
+                    "chemicalIndicator": "N",
+                    "fuelRestrictionIndicator": "N",
+                    "color": "Y",
+                    "aerosolIndicator": "N",
+                    "hasMercury": "N",
+                    "perishable": false,
+                    "temperatureSensitive": false,
+                    "varietyPack": false,
+                    "multipackIndicator": "N",
+                    "batteriesIncluded": "N",
+                    "alcohol": false,
+                    "publisher": "Warner Home Video",
+                    "bookFormat": "Other"
+                },
+                "productSegment": "Books, Music & Movies",
+                "productType": "TV Shows",
+                "productTypeId": "330",
+                "regularItem": true
+            },
+            "1YDSMQ57AP6F": {
+                "usItemId": "648944343",
+                "productId": "1YDSMQ57AP6F",
+                "upc": "883929624225",
+                "primaryProductId": "1YDSMQ57AP6F",
+                "status": "FETCHED",
+                "productPublishStatus": "PUBLISHED",
+                "offers": [
+                    "360C85DCD63F4D5DA770A3BC6EE28C2A"
+                ],
+                "images": [
+                    "8F3B16AFE64241BA94B09C03FE9CCBE8",
+                    "1ED5F3B49FFD4E7BBD58224FAF863D46",
+                    "EBCB0C3EDAE14ADAB8D3B22BE4011C8D",
+                    "426168BEFDD4424EAA389222A83DF5A1",
+                    "E294FCEBE90046C689415C82D3AAA868"
+                ],
+                "productAttributes": {
+                    "productName": "Rick and Morty: Season 3 (DVD)",
+                    "shortDescription": "Rick and Morty is a show about a sociopathic scientist who drags his unintelligent grandson on insanely dangerous adventures across the universe. Created and executive produced by Dan Harmon (Community, Channel 101) and Justin Roiland (House of Cosbys).&nbsp;<p></p>",
+                    "detailedDescription": "<br>Coming soon.&nbsp;",
+                    "manufacturerName": "WARNER HOME VIDEO",
+                    "classType": "REGULAR",
+                    "productCategory": {
+                        "categoryPath": "Home Page/Movies & TV Shows/TV Shows/Anime & Animation TV Shows/All Animation & Cartoons",
+                        "categoryPathId": "0:4096:530719:1010219:1010227",
+                        "path": [
+                            {
+                                "name": "Movies & TV Shows",
+                                "url": "/cp/4096"
+                            },
+                            {
+                                "name": "TV Shows",
+                                "url": "/cp/530719"
+                            },
+                            {
+                                "name": "Anime & Animation TV Shows",
+                                "url": "/cp/1010219"
+                            },
+                            {
+                                "name": "All Animation & Cartoons",
+                                "url": "/cp/1010227"
+                            }
+                        ]
+                    },
+                    "productClassification": {},
+                    "legalContent": {
+                        "legalAttributes": [
+                            {
+                                "legalAttributeType": "MPAA_RATING",
+                                "legalAttributeValue": "Unrated"
+                            }
+                        ]
+                    },
+                    "movieContent": {
+                        "movieAttributes": [
+                            {
+                                "movieAttributeType": "MPAA_RATING",
+                                "movieAttributeValue": "Unrated"
+                            },
+                            {
+                                "movieAttributeType": "DIRECTOR",
+                                "movieAttributeValue": "Dan Harmon, Justin Roiland"
+                            },
+                            {
+                                "movieAttributeType": "ACTORS",
+                                "movieAttributeValue": "Kari Wahlgren, Spencer Grammer, Justin Roiland, Tom Kenny, Chris Parnell, Sarah Chalke"
+                            },
+                            {
+                                "movieAttributeType": "GENRE",
+                                "movieAttributeValue": "Comedy"
+                            },
+                            {
+                                "movieAttributeType": "LANGUAGES",
+                                "movieAttributeValue": "English"
+                            },
+                            {
+                                "movieAttributeType": "SYNOPSIS",
+                                "movieAttributeValue": "Rick and Morty is a show about a sociopathic scientist who drags his unintelligent grandson on insanely dangerous adventures across the universe. Created and executive produced by Dan Harmon (Community, Channel 101) and Justin Roiland (House of Cosbys)."
+                            },
+                            {
+                                "movieAttributeType": "STUDIO_AND_PRODUCTION_COMPANY",
+                                "movieAttributeValue": "Warner Bros."
+                            },
+                            {
+                                "movieAttributeType": "NUMBER_OF_CUST_RATINGS",
+                                "movieAttributeValue": "5"
+                            },
+                            {
+                                "movieAttributeType": "DURATION",
+                                "movieAttributeValue": "220 min"
+                            }
+                        ]
+                    },
+                    "vuduAttributes": {
+                        "duration": "220 min",
+                        "studio": "Warner Bros.",
+                        "language": "English",
+                        "movieGenre": "Comedy",
+                        "mpaaRating": "Unrated",
+                        "tvShowGenre": "Animation & Cartoons",
+                        "tvRating": "Not Rated",
+                        "synopsis": "Rick and Morty is a show about a sociopathic scientist who drags his unintelligent grandson on insanely dangerous adventures across the universe. Created and executive produced by Dan Harmon (Community, Channel 101) and Justin Roiland (House of Cosbys)."
+                    },
+                    "brand": "Warner Bros.",
+                    "rhPath": "20000:26000:26002:26128:26528",
+                    "canonicalUrl": "/ip/Rick-and-Morty-Season-3-DVD/648944343?athpgid=athenaItempage_38198856&athctxid&athcpid=648944343&atlmtid=BuyTogetherValue&athcgid&athena=true&athieid=v0&athbktid&athstid=CS002&athguid=67750d91-b67-16da83eea3c9e4",
+                    "averageRating": 2,
+                    "numberOfReviews": 5,
+                    "primaryShelfId": "1010227",
+                    "ironbankCategory": "TV Shows",
+                    "sku": "00883929624225",
+                    "karfMaximumOrderQuantity": "12",
+                    "merchandiseCommerceNumber": "11665612",
+                    "pricePerUnitUom": "Each",
+                    "pricePerUnitQuantity": "1.0000",
+                    "primaryShelf": "All Animation & Cartoons",
+                    "karfMaximumQuantityFactor": "1",
+                    "productTaxCode": "2038710",
+                    "karfIsAlcohol": "No",
+                    "karfSalesUnit": "Each",
+                    "hazardousMaterialsIndicator": "N",
+                    "controlledSubstance": false,
+                    "cpscRegulatedIndicator": "N",
+                    "pesticideIndicator": "N",
+                    "chemicalIndicator": "N",
+                    "fuelRestrictionIndicator": "N",
+                    "aerosolIndicator": "N",
+                    "hasMercury": "N",
+                    "temperatureSensitive": false,
+                    "varietyPack": false,
+                    "multipackIndicator": "N",
+                    "batteriesIncluded": "N",
+                    "alcohol": false
+                },
+                "productSegment": "Books, Music & Movies",
+                "productType": "TV Shows",
+                "productTypeId": "330",
+                "regularItem": true
+            }
+        },
+        "images": {
+            "1ED5F3B49FFD4E7BBD58224FAF863D46": {
+                "type": "SECONDARY",
+                "rank": 2,
+                "assetId": "1ED5F3B49FFD4E7BBD58224FAF863D46",
+                "width": "450",
+                "height": "450",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/0d4916b6-ce4d-4452-a29e-1b6978a9fd7f_1.15933f0034c96ace5c8dbf3a3efab51c.png",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/0d4916b6-ce4d-4452-a29e-1b6978a9fd7f_1.15933f0034c96ace5c8dbf3a3efab51c.png"
+                }
+            },
+            "426168BEFDD4424EAA389222A83DF5A1": {
+                "type": "SECONDARY",
+                "rank": 4,
+                "assetId": "426168BEFDD4424EAA389222A83DF5A1",
+                "width": "450",
+                "height": "450",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/5c235145-bdd3-4289-a79f-8b23bc8d7677_1.4debcadb1394a9cfa2cd536655bf3efd.jpeg",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/5c235145-bdd3-4289-a79f-8b23bc8d7677_1.4debcadb1394a9cfa2cd536655bf3efd.jpeg"
+                }
+            },
+            "8F3B16AFE64241BA94B09C03FE9CCBE8": {
+                "type": "PRIMARY",
+                "rank": 1,
+                "assetId": "8F3B16AFE64241BA94B09C03FE9CCBE8",
+                "width": "393",
+                "height": "500",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/dc1a3148-246a-4e18-b71f-cc1cb1de0f68_1.09d4db8814e24755c732a362bc11df61.jpeg",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/dc1a3148-246a-4e18-b71f-cc1cb1de0f68_1.09d4db8814e24755c732a362bc11df61.jpeg"
+                }
+            },
+            "C16ECAEFDD9E41DB81C08E47947EF367": {
+                "type": "PRIMARY",
+                "rank": 1,
+                "assetId": "C16ECAEFDD9E41DB81C08E47947EF367",
+                "width": "244",
+                "height": "348",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.wal.co/asr/c514e89b-2585-420a-9a01-c8d9d40221b4_1.914168dd8d944a5ecddc581204ba3b9a.jpeg-e2aae41d2751674ab28577b702e5390d215fa973-legacy-q85.jpg",
+                    "DEFAULT": "https://i5.wal.co/asr/c514e89b-2585-420a-9a01-c8d9d40221b4_1.914168dd8d944a5ecddc581204ba3b9a.jpeg-e2aae41d2751674ab28577b702e5390d215fa973-legacy-q85.jpg"
+                }
+            },
+            "EBCB0C3EDAE14ADAB8D3B22BE4011C8D": {
+                "type": "SECONDARY",
+                "rank": 3,
+                "assetId": "EBCB0C3EDAE14ADAB8D3B22BE4011C8D",
+                "width": "450",
+                "height": "450",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/8000be38-1f6c-4cda-899b-58075028150c_1.aff33e512a84da864f0aa66ac78f38d9.jpeg",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/8000be38-1f6c-4cda-899b-58075028150c_1.aff33e512a84da864f0aa66ac78f38d9.jpeg"
+                }
+            },
+            "C84805C2C0CF42A1BCCD42C71DBC1535": {
+                "type": "SECONDARY",
+                "rank": 2,
+                "assetId": "C84805C2C0CF42A1BCCD42C71DBC1535",
+                "width": "1061",
+                "height": "1500",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_2000": "https://i5.walmartimages.com/asr/3b783754-a21c-4bec-b201-9d3b5a57f48a_1.7f97f6e0b00d00c73d8ed71fb7b33c8f.jpeg",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/3b783754-a21c-4bec-b201-9d3b5a57f48a_1.7f97f6e0b00d00c73d8ed71fb7b33c8f.jpeg"
+                }
+            },
+            "E294FCEBE90046C689415C82D3AAA868": {
+                "type": "SECONDARY",
+                "rank": 5,
+                "assetId": "E294FCEBE90046C689415C82D3AAA868",
+                "width": "450",
+                "height": "450",
+                "assetSizeUrls": {
+                    "IMAGE_SIZE_450": "https://i5.walmartimages.com/asr/6ecc5a26-9e7b-46ff-bbcf-2a4f0405e503_1.ef3c6b919590737c278cd0f4d58762da.jpeg",
+                    "DEFAULT": "https://i5.walmartimages.com/asr/6ecc5a26-9e7b-46ff-bbcf-2a4f0405e503_1.ef3c6b919590737c278cd0f4d58762da.jpeg"
+                }
+            }
+        },
+        "offers": {
+            "360C85DCD63F4D5DA770A3BC6EE28C2A": {
+                "id": "360C85DCD63F4D5DA770A3BC6EE28C2A",
+                "productId": "1YDSMQ57AP6F",
+                "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+                "offerInfo": {
+                    "offerId": "360C85DCD63F4D5DA770A3BC6EE28C2A",
+                    "offerType": "ONLINE_AND_STORE",
+                    "preorderInfo": {},
+                    "quantityOptions": {
+                        "orderLimit": 12,
+                        "orderMinLimit": 1
+                    },
+                    "offerMarketAttributes": {},
+                    "shippingPassEligible": false,
+                    "globalTaxCode": "2038710",
+                    "purchaseOption": "BUY",
+                    "conditionType": "NEW",
+                    "associateDiscountableInd": true,
+                    "callToAction": {},
+                    "showSoldBy": false
+                },
+                "pricesInfo": {
+                    "savings": {
+                        "savingsAmount": {
+                            "price": 0,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        },
+                        "savingsPercentage": 0
+                    },
+                    "priceDisplayCodes": {
+                        "rollback": false,
+                        "reducedPrice": false,
+                        "clearance": false,
+                        "hidePriceForSOI": false,
+                        "eligibleForAssociateDiscount": true,
+                        "strikethrough": false
+                    },
+                    "priceMap": {
+                        "CURRENT": {
+                            "price": 24.89,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        },
+                        "ADJUSTED": {
+                            "price": 24.89,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        }
+                    }
+                },
+                "productAvailability": {
+                    "availabilityStatus": "IN_STOCK"
+                },
+                "fulfillment": {
+                    "hasShippingRestrictions": false,
+                    "shippingOptions": [
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ORDER",
+                            "shipMethod": "STANDARD"
+                        },
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ITEM",
+                            "shipMethod": "EXPEDITED"
+                        },
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ITEM",
+                            "shipMethod": "RUSH"
+                        }
+                    ],
+                    "freeShippingThresholdPrice": {},
+                    "locationSurcharge": false,
+                    "highlightedShippingOption": {
+                        "index": 0,
+                        "title": "shipping_title_default"
+                    },
+                    "shippable": true,
+                    "pickupable": false
+                },
+                "consumable": false,
+                "geoItemClassification": "NETWORK_GEO",
+                "addToCart": {
+                    "status": "CTA_INITIALIZED"
+                }
+            },
+            "53ED50954D26475D8EF53B4709B2AF3C": {
+                "id": "53ED50954D26475D8EF53B4709B2AF3C",
+                "productId": "4RRTMLAUWPLF",
+                "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+                "offerInfo": {
+                    "offerId": "53ED50954D26475D8EF53B4709B2AF3C",
+                    "offerType": "ONLINE_AND_STORE",
+                    "preorderInfo": {},
+                    "quantityOptions": {
+                        "orderLimit": 12,
+                        "orderMinLimit": 1
+                    },
+                    "offerMarketAttributes": {},
+                    "shippingPassEligible": false,
+                    "globalTaxCode": "2038710",
+                    "purchaseOption": "BUY",
+                    "conditionType": "NEW",
+                    "associateDiscountableInd": true,
+                    "payInPersonEligible": true,
+                    "s2hEligibilityIndicator": "false",
+                    "callToAction": {
+                        "primaryButton": "UNKNOWN",
+                        "secondaryButton": "UNKNOWN"
+                    },
+                    "showSoldBy": false
+                },
+                "pricesInfo": {
+                    "savings": {
+                        "savingsAmount": {
+                            "price": 0,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        },
+                        "savingsPercentage": 0
+                    },
+                    "priceDisplayCodes": {
+                        "rollback": false,
+                        "reducedPrice": false,
+                        "clearance": false,
+                        "hidePriceForSOI": false,
+                        "eligibleForAssociateDiscount": true,
+                        "strikethrough": true
+                    },
+                    "priceMap": {
+                        "CURRENT": {
+                            "price": 15.92,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        },
+                        "ADJUSTED": {
+                            "price": 15.92,
+                            "currencyUnit": "USD",
+                            "currencyUnitSymbol": "$"
+                        }
+                    }
+                },
+                "productAvailability": {
+                    "availabilityStatus": "IN_STOCK"
+                },
+                "fulfillment": {
+                    "hasShippingRestrictions": false,
+                    "shippingOptions": [
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ORDER",
+                            "shipMethod": "STANDARD"
+                        },
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ITEM",
+                            "shipMethod": "EXPEDITED"
+                        },
+                        {
+                            "fulfillmentPrice": {},
+                            "fulfillmentDateRange": {},
+                            "fulfillmentPriceType": "ITEM",
+                            "shipMethod": "RUSH"
+                        }
+                    ],
+                    "freeShippingThresholdPrice": {},
+                    "locationSurcharge": false,
+                    "highlightedShippingOption": {
+                        "index": 0,
+                        "title": "shipping_title_default"
+                    },
+                    "shippable": true,
+                    "pickupable": false
+                },
+                "consumable": false,
+                "geoItemClassification": "NETWORK_GEO",
+                "addToCart": {
+                    "status": "CTA_INITIALIZED"
+                }
+            }
+        },
+        "sellers": {
+            "F55CDC31AB754BB68FE0B39041159D63": {
+                "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+                "catalogSellerId": "0",
+                "sellerName": "Walmart.com",
+                "sellerDisplayName": "Walmart.com",
+                "sellerType": "INTERNAL"
+            }
+        },
+        "idmlMap": {},
+        "buyTogetherValue": {
+            "anchor": {
+                "productId": "4RRTMLAUWPLF",
+                "usItemId": "38198856",
+                "hasSavings": false
+            },
+            "accessories": [
+                {
+                    "productId": "1YDSMQ57AP6F",
+                    "usItemId": "648944343",
+                    "hasSavings": false
+                }
+            ],
+            "totalPrice": 40.81,
+            "totalSavings": 0,
+            "separatelyPrice": 40.81,
+            "id": "579C9FF3E19F418090FE8250C75F0B09",
+            "hasSavings": false,
+            "accessoryAdapters": [
+                {
+                    "productId": "1YDSMQ57AP6F",
+                    "usItemId": "648944343",
+                    "hasSavings": false
+                }
+            ],
+            "shippingPassEligible": false,
+            "irsBeaconData": {
+                "bucket_id": "irsbucketdefault",
+                "parent_anchor_item_id": "38198856",
+                "beacon_version": "1.0.1",
+                "parent_item_id": "38198856",
+                "config_id": "2",
+                "visitor_id": "TE752TWbuQYHduQZMD_Cg8",
+                "strategy": "ABTV1",
+                "items_placed": "38198856,648944343",
+                "placement_id": "irs_cbtv"
+            }
+        }
+    }
+};
+
+const instantPot = {
     "status": "OK",
     "errors": [],
     "header": {
@@ -597,7 +1243,7 @@ const sample = {
     }
 };
 
-export function fetchProduct(btvId) {
+export async function fetchProduct(btvId) {
     /*
     return fetch("https://www.walmart.com/terra-firma/fetch?rgs=PRODUCT", {
       body: JSON.stringify({
@@ -613,7 +1259,5 @@ export function fetchProduct(btvId) {
       }
     }).json();
     */
-    return new Promise((resolve, reject) => {
-        resolve(sample);
-    });
+    return rickAndMorty;
 }
