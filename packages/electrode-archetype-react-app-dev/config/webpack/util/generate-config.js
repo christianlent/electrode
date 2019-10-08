@@ -13,14 +13,15 @@ function searchUserCustomConfig(options) {
   const cwd = process.cwd();
   const archPath = Path.resolve("archetype/config/webpack");
 
+  let configFilename = options.configFilename;
+  if (!configFilename.startsWith("webpack.config")) {
+    configFilename = configFilename === "production.js" ? `webpack.config.js` : `webpack.config.${configFilename}`;
+  }
+  
   const customLocations = [
     {
       dir: cwd,
-      file: options.configFilename
-    },
-    {
-      dir: cwd,
-      file: "webpack.config.js"
+      file: configFilename
     },
     {
       dir: archPath,
