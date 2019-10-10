@@ -644,6 +644,618 @@ const rickAndMorty = {
     }
 };
 
+const instantPotReviews = {
+    "status": "OK",
+    "errors": [],
+    "header": {
+        "headerAttributes": {
+            "tenant": {
+                "WM_BU_ID": "0",
+                "WM_MART_ID": "0",
+                "WM_VERTICAL_ID": "0",
+                "WM_CHANNEL_ID": "0",
+                "WM_LOCALE_ID": "en_US"
+            },
+            "server": {
+                "sha": "2b07c4ca0eb91fe63212c3c9f099f75d9c268406",
+                "ver": "126.0.0",
+                "name": "app-713903461-35-815032316",
+                "dc": "prod-az-southcentralus-16",
+                "env": "prod-a"
+            },
+            "context": {
+                "access": true,
+                "device": "UNSPECIFIED",
+                "browser": "CRAWLER",
+                "topTxId": "4ea5dfb4-68-16db6b8b2f2000"
+            },
+            "timing": {
+                "total": {
+                    "elapsed": 33,
+                    "active": 33,
+                    "threads": 3,
+                    "futures": 16,
+                    "delay": 0,
+                    "orchestrate": 1
+                }
+            }
+        }
+    },
+    "payload": {
+        "products": {},
+        "offers": {},
+        "idmlMap": {},
+        "reviews": {
+            "1A1HPSTPP6VF": {
+                "averageOverallRating": 4.8062,
+                "roundedAverageOverallRating": 4.8,
+                "overallRatingRange": 5.0,
+                "totalReviewCount": 129,
+                "recommendedPercentage": 54,
+                "ratingValueOneCount": 4,
+                "ratingValueTwoCount": 0,
+                "ratingValueThreeCount": 1,
+                "ratingValueFourCount": 7,
+                "ratingValueFiveCount": 117,
+                "percentageOneCount": 3,
+                "percentageTwoCount": 0,
+                "percentageThreeCount": 0,
+                "percentageFourCount": 5,
+                "percentageFiveCount": 90,
+                "activeSort": "relevancy",
+                "pagination": {
+                    "total": 126,
+                    "pages": [
+                        {
+                            "num": 1,
+                            "gap": false,
+                            "active": true,
+                            "url": "sort=relevancy&page=1"
+                        },
+                        {
+                            "num": 2,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=2"
+                        },
+                        {
+                            "num": 3,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=3"
+                        },
+                        {
+                            "num": 4,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=4"
+                        },
+                        {
+                            "num": 5,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=5"
+                        },
+                        {
+                            "num": 6,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=6"
+                        },
+                        {
+                            "num": 0,
+                            "gap": true,
+                            "active": false
+                        },
+                        {
+                            "num": 13,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=13"
+                        }
+                    ],
+                    "next": {
+                        "num": 0,
+                        "gap": false,
+                        "active": false,
+                        "url": "sort=relevancy&page=2"
+                    },
+                    "currentSpan": "1-10"
+                },
+                "customerReviews": [
+                    {
+                        "reviewId": "129963512",
+                        "authorId": "zldp0bv7y9b5nd94vsqj5u3uhq",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 6,
+                        "rating": 5.0,
+                        "reviewTitle": "Excellent product! I highly recommend it!",
+                        "reviewText": "The Instant Pot has become an indispensable tool in my kitchen. My husband is a transplant patient and needs to be on a strict anti-inflammatory diet. So I use it daily to make grains, legumes, and squash, since it deactivates the lectins in these foods that cause inflammation. Not only do I use it for cooking anti-inflammatory foods, but I have extended my use of it to cook meats, vegetables, make high mineral bone broth with the slow cook function, and make delicious coconut yogurt. We eat all organic food, so we need to have an easy, reliable method of cooking. The Instant Pot makes this possible. It is amazing what can be done with one kitchen appliance to make nutritious meals! I highly recommend it! Not only is it an great product, but customer service is excellent! They have been very supportive whenever I needed help.",
+                        "reviewSubmissionTime": "6/19/2019",
+                        "userNickname": "Jackie",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": [],
+                        "clientResponses": [
+                            {
+                                "response": "Thank you so much for your review Jackie! We are so happy that the Instant Pot has been useful for you and your husband.",
+                                "department": "instantpotpwr",
+                                "date": "6/26/2019",
+                                "name": "instantpotpwr"
+                            }
+                        ]
+                    },
+                    {
+                        "reviewId": "132658200",
+                        "authorId": "4d19f92e8562bcce5bb4463f2e5befca",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 41,
+                        "positiveFeedback": 42,
+                        "rating": 5.0,
+                        "reviewTitle": "instant pot 8 QT pressure cooker",
+                        "reviewText": "It has s stainless steel bowl that other pressure cookers didn't have. It does come with a cookbook but is limited with recipes and cook times. I recommend pressure cooker cookbook or googling recipes. \n\nIt cooks great in grain, rice, and pressure cooker modes and learning more as I go. It's definitely a great time savor in cooking department and true to other reviews for instant pot. I have the 8 Qt and they don't make the 10 Qt yet.  I wanted something bigger than 6 Qt that got all the reviews for and wanted to make bigger quanties if needed to. Not sure about canning yet, will experiment with time.",
+                        "reviewSubmissionTime": "3/4/2017",
+                        "userNickname": "ajchester",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [
+                            {
+                                "Id": "23467697-5714-485e-ba93-c86a1ca10912",
+                                "Sizes": {
+                                    "normal": {
+                                        "Id": "normal",
+                                        "Url": "https://i5.walmartimages.com/dfw/6e29e393-bf86/k2-_59baa379-8ba5-4760-bf9f-41847300b114.v1.jpg"
+                                    },
+                                    "thumbnail": {
+                                        "Id": "thumbnail",
+                                        "Url": "https://i5.walmartimages.com/dfw/6e29e393-bf86/k2-_59baa379-8ba5-4760-bf9f-41847300b114.v1.jpg?odnWidth=150&odnHeight=150&odnBg=ffffff"
+                                    }
+                                },
+                                "SizesOrder": [
+                                    "normal",
+                                    "thumbnail"
+                                ]
+                            }
+                        ],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "123749348",
+                        "authorId": "zlgk5scjbv3mn9g3j22xeq1kix",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 5,
+                        "rating": 5.0,
+                        "reviewTitle": "I'm going to need more of these!!",
+                        "reviewText": "This is making life SO much easier!! It really does cut cooking time down by so much! It's so nice having more time and not spending as much time in the kitchen. It's also super easy to clean and it has a lot of features that we're excited to try out.",
+                        "reviewSubmissionTime": "1/23/2019",
+                        "userNickname": "Hillary",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "122401163",
+                        "authorId": "zdyu0fpd34y2n1rgyfh2pt70ay",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 4,
+                        "rating": 5.0,
+                        "reviewTitle": "So fast it makes my hubby look slow.",
+                        "reviewText": "I love this product!!! I cooked a roast from frozen to shreddable in a little over two hours. That's crazy!!!! I now have TWO instant pots and I love them both. I have a 6qt and an 8qt and use them both frequently. Best appliance on my counter by far!!!!!!!",
+                        "reviewSubmissionTime": "12/12/2018",
+                        "userNickname": "Alycia",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "125648938",
+                        "authorId": "z6iix5hi1ixatj24nsw6q9gybi",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 7,
+                        "rating": 5.0,
+                        "reviewTitle": "Works as they say",
+                        "reviewText": "I'm learning how to use it, but so far it works just as expected. Now I just need to get more recipes!",
+                        "reviewSubmissionTime": "3/14/2019",
+                        "userNickname": "Wren",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": [],
+                        "clientResponses": [
+                            {
+                                "response": "Hi Wren,\n\nWe have 1000+ recipes available on our website. \n\nhttps://recipes.instantpot.com",
+                                "department": "instantpotpwr",
+                                "date": "3/20/2019",
+                                "name": "instantpotpwr"
+                            }
+                        ]
+                    },
+                    {
+                        "reviewId": "128438956",
+                        "authorId": "zt6jj8ywuidwkdb18ofvaqw80x",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 5,
+                        "rating": 5.0,
+                        "reviewTitle": "Oh yes!!!",
+                        "reviewText": "Love it, have cooked many things from soups, stews, rice, etc, wonderful, time saving, don't see how I lived without it",
+                        "reviewSubmissionTime": "5/11/2019",
+                        "userNickname": "Shirley",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "120455192",
+                        "authorId": "zp2bo5ioyt8056kp69w37nvm8x",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 1,
+                        "positiveFeedback": 4,
+                        "rating": 5.0,
+                        "reviewTitle": "Have talked so many people into getting one!",
+                        "reviewText": "Love my instant pot sooooooo much! I have made so many things in it! Anxious to try some of the baking recipes and egg bites soon!! Favorite thing to make is chicken & dumplings!",
+                        "reviewSubmissionTime": "10/20/2018",
+                        "userNickname": "Kelly",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "121643225",
+                        "authorId": "zpjnvi56filgrlve6nf7574mdr",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 3,
+                        "rating": 5.0,
+                        "reviewTitle": "I would take a bullet for my Instant Pot!",
+                        "reviewText": "This is my second Instant Pot. I bought the 6 quart at first & now I have the 8 quart. I use it daily & if I could have only one kitchen appliance, it would be my Instant Pot!",
+                        "reviewSubmissionTime": "11/20/2018",
+                        "userNickname": "Debra",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "137012824",
+                        "authorId": "z20nkgnz8alscfx5jp59tbw1yq",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 0,
+                        "rating": 5.0,
+                        "reviewTitle": "BUY THIS POT AS SOON AS YOU CAN!",
+                        "reviewText": "This is my second instant pot. There is nothing I can find to ask for improvement on. I have used Pressure Cookers and Slow Cookers for years and this pot surpasses anything I have ever used. I used it so much I finally ordered the larger one. Every kitchen needs one!",
+                        "reviewSubmissionTime": "10/4/2019",
+                        "userNickname": "Donna",
+                        "syndicationSource": {
+                            "name": "instantpot.com",
+                            "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                        },
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "132877026",
+                        "authorId": "68ffef38e9b1ba60a6fabbfd55de7506",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 42,
+                        "positiveFeedback": 54,
+                        "rating": 1.0,
+                        "reviewTitle": "Early Instant Pot death",
+                        "reviewText": "I love the Instant Pot.  The reason for one star for  this item??  I gave it as a housewarming  gift  to my BFF.  She used it  once , and it died.  Walmart  has no more of the DUO80's  in stock.  I am totally  disappointed and venting.  Walmart is wonderful.  The Instant Pot is a MUST HAVE.  The one purchased was a lemon, and I will be returning it.  I want replacement not refund, but I don't want to wait MONTHS for the replacement!",
+                        "reviewSubmissionTime": "3/5/2017",
+                        "userNickname": "ByeByr",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [
+                            {
+                                "Id": "56d02919-b3e2-4a76-8fdb-0505f01131a2",
+                                "Sizes": {
+                                    "normal": {
+                                        "Id": "normal",
+                                        "Url": "https://i5.walmartimages.com/dfw/6e29e393-8223/k2-_b3b3d259-119d-411d-9069-72176ed30134.v1.jpg"
+                                    },
+                                    "thumbnail": {
+                                        "Id": "thumbnail",
+                                        "Url": "https://i5.walmartimages.com/dfw/6e29e393-8223/k2-_b3b3d259-119d-411d-9069-72176ed30134.v1.jpg?odnWidth=150&odnHeight=150&odnBg=ffffff"
+                                    }
+                                },
+                                "SizesOrder": [
+                                    "normal",
+                                    "thumbnail"
+                                ]
+                            }
+                        ],
+                        "videos": [],
+                        "clientResponses": [
+                            {
+                                "response": "\nWe are sorry to hear about your experience with your gift of an Instant Pot Duo. We appreciate you taking the time to provide your feedback. If you haven't already, we would encourage you to reach out to our customer support team so that we may discuss this further and to ensure you have a fully operational Instant Pot. We want you to be pleased with your purchase and are always standing by to assist!",
+                                "department": "Instant Brands Support",
+                                "date": "8/16/2019"
+                            }
+                        ]
+                    }
+                ],
+                "topPositiveReview": {
+                    "reviewId": "129963512",
+                    "authorId": "zldp0bv7y9b5nd94vsqj5u3uhq",
+                    "recommended": false,
+                    "showRecommended": false,
+                    "negativeFeedback": 0,
+                    "positiveFeedback": 6,
+                    "rating": 5.0,
+                    "reviewTitle": "Excellent product! I highly recommend it!",
+                    "reviewText": "The Instant Pot has become an indispensable tool in my kitchen. My husband is a transplant patient and needs to be on a strict anti-inflammatory diet. So I use it daily to make grains, legumes, and squash, since it deactivates the lectins in these foods that cause inflammation. Not only do I use it for cooking anti-inflammatory foods, but I have extended my use of it to cook meats, vegetables, make high mineral bone broth with the slow cook function, and make delicious coconut yogurt. We eat all organic food, so we need to have an easy, reliable method of cooking. The Instant Pot makes this possible. It is amazing what can be done with one kitchen appliance to make nutritious meals! I highly recommend it! Not only is it an great product, but customer service is excellent! They have been very supportive whenever I needed help.",
+                    "reviewSubmissionTime": "6/19/2019",
+                    "userNickname": "Jackie",
+                    "syndicationSource": {
+                        "name": "instantpot.com",
+                        "logoImageUrl": "https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/321edb03-3ca4-471e-b078-a3cd6c3ba09f"
+                    },
+                    "badges": [
+                        {
+                            "badgeType": "Custom",
+                            "id": "VerifiedPurchaser",
+                            "contentType": "REVIEW"
+                        }
+                    ],
+                    "userAttributes": {},
+                    "photos": [],
+                    "videos": [],
+                    "clientResponses": [
+                        {
+                            "response": "Thank you so much for your review Jackie! We are so happy that the Instant Pot has been useful for you and your husband.",
+                            "department": "instantpotpwr",
+                            "date": "6/26/2019",
+                            "name": "instantpotpwr"
+                        }
+                    ]
+                },
+                "topNegativeReview": {
+                    "reviewId": "132877026",
+                    "authorId": "68ffef38e9b1ba60a6fabbfd55de7506",
+                    "recommended": true,
+                    "showRecommended": true,
+                    "negativeFeedback": 42,
+                    "positiveFeedback": 54,
+                    "rating": 1.0,
+                    "reviewTitle": "Early Instant Pot death",
+                    "reviewText": "I love the Instant Pot.  The reason for one star for  this item??  I gave it as a housewarming  gift  to my BFF.  She used it  once , and it died.  Walmart  has no more of the DUO80's  in stock.  I am totally  disappointed and venting.  Walmart is wonderful.  The Instant Pot is a MUST HAVE.  The one purchased was a lemon, and I will be returning it.  I want replacement not refund, but I don't want to wait MONTHS for the replacement!",
+                    "reviewSubmissionTime": "3/5/2017",
+                    "userNickname": "ByeByr",
+                    "badges": [
+                        {
+                            "badgeType": "Custom",
+                            "id": "VerifiedPurchaser",
+                            "contentType": "REVIEW"
+                        }
+                    ],
+                    "userAttributes": {},
+                    "photos": [
+                        {
+                            "Id": "56d02919-b3e2-4a76-8fdb-0505f01131a2",
+                            "Sizes": {
+                                "normal": {
+                                    "Id": "normal",
+                                    "Url": "https://i5.walmartimages.com/dfw/6e29e393-8223/k2-_b3b3d259-119d-411d-9069-72176ed30134.v1.jpg"
+                                },
+                                "thumbnail": {
+                                    "Id": "thumbnail",
+                                    "Url": "https://i5.walmartimages.com/dfw/6e29e393-8223/k2-_b3b3d259-119d-411d-9069-72176ed30134.v1.jpg?odnWidth=150&odnHeight=150&odnBg=ffffff"
+                                }
+                            },
+                            "SizesOrder": [
+                                "normal",
+                                "thumbnail"
+                            ]
+                        }
+                    ],
+                    "videos": [],
+                    "clientResponses": [
+                        {
+                            "response": "\nWe are sorry to hear about your experience with your gift of an Instant Pot Duo. We appreciate you taking the time to provide your feedback. If you haven't already, we would encourage you to reach out to our customer support team so that we may discuss this further and to ensure you have a fully operational Instant Pot. We want you to be pleased with your purchase and are always standing by to assist!",
+                            "department": "Instant Brands Support",
+                            "date": "8/16/2019"
+                        }
+                    ]
+                },
+                "lookupId": "1A1HPSTPP6VF",
+                "aspects": [
+                    {
+                        "id": 2894,
+                        "score": 100,
+                        "name": "Meals"
+                    },
+                    {
+                        "id": 12,
+                        "score": 100,
+                        "name": "Usage"
+                    },
+                    {
+                        "id": 21,
+                        "score": 100,
+                        "name": "Size"
+                    },
+                    {
+                        "id": 9313,
+                        "score": 100,
+                        "name": "Recipes"
+                    },
+                    {
+                        "id": 48,
+                        "score": 100,
+                        "name": "Price"
+                    },
+                    {
+                        "id": 8199,
+                        "score": 100,
+                        "name": "Cooking"
+                    },
+                    {
+                        "id": 95,
+                        "score": 100,
+                        "name": "Cleaning"
+                    },
+                    {
+                        "id": 1123,
+                        "score": 100,
+                        "name": "Warranty"
+                    },
+                    {
+                        "id": 227,
+                        "score": 100,
+                        "name": "User Friendliness"
+                    },
+                    {
+                        "id": 481,
+                        "score": 100,
+                        "name": "Home"
+                    },
+                    {
+                        "id": 58686,
+                        "score": 100,
+                        "name": "Hard Boiled Eggs"
+                    },
+                    {
+                        "id": 112,
+                        "score": 100,
+                        "name": "Functions"
+                    },
+                    {
+                        "id": 2444,
+                        "score": 100,
+                        "name": "Dinner"
+                    },
+                    {
+                        "id": 27,
+                        "score": 100,
+                        "name": "Design"
+                    },
+                    {
+                        "id": 32499,
+                        "score": 100,
+                        "name": "Cookbook"
+                    },
+                    {
+                        "id": 5283,
+                        "score": 0,
+                        "name": "Health"
+                    }
+                ]
+            }
+        }
+    }
+};
+
 const instantPot = {
     "status": "OK",
     "errors": [],
@@ -1260,4 +1872,23 @@ export async function fetchProduct(btvId) {
     }).json();
     */
     return rickAndMorty;
+}
+
+export async function fetchReviews(itemId) {
+    /*
+    return fetch("https://www.walmart.com/terra-firma/fetch?rgs=REVIEWS_MAP", {
+      body: JSON.stringify({
+        itemId,
+        "paginationContext": {},
+        "postalAddress": {},
+        "storeFrontIds": []
+      }),
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+      }
+    }).json();
+    */
+    return instantPotReviews;
 }
