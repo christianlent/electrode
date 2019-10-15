@@ -88,6 +88,14 @@ const Template = (
           _id="subapp-web/lib/load"
           _concurrent
           timestamp
+          elementId="subapp-reviews"
+          name="Reviews"
+        />
+
+        <Require
+          _id="subapp-web/lib/load"
+          _concurrent
+          timestamp
           elementId="subapp-footer"
           name="Footer"
         />

@@ -3,14 +3,16 @@ import { loadSubApp } from "subapp-web";
 import { Fab, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { fetchProduct } from "../components/api";
+import { makeImportant } from "../components/global";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(makeImportant({
   add: {
     backgroundColor: "#0065ff",
+    boxShadow: "none",
     color: "white",
     fontFamily: "Bogle !important",
-    marginLeft: 25,
-    marginTop: 25,
+    height: 40,
+    marginTop: 30,
     textTransform: "initial",
   },
   img: {
@@ -25,7 +27,7 @@ const useStyles = makeStyles({
     marginTop: 50,
     paddingLeft: 15,
   },
-});
+}));
 
 const Component = (props) => {
   const classes = useStyles();

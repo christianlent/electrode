@@ -24,10 +24,12 @@ function slugify(text) {
 const useStyles = makeStyles(makeImportant({
   add: {
     backgroundColor: "#0065ff",
+    boxShadow: "none",
     color: "white",
     fontFamily: "Bogle !important",
+    height: 40,
     marginLeft: 25,
-    marginTop: 25,
+    marginTop: 30,
     textTransform: "initial",
   },
   button: {

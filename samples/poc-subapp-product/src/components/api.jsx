@@ -644,6 +644,229 @@ const rickAndMorty = {
     }
 };
 
+const rickAndMortyReviews = {
+    "status": "OK",
+    "errors": [],
+    "header": {
+        "headerAttributes": {
+            "tenant": {
+                "WM_BU_ID": "0",
+                "WM_MART_ID": "0",
+                "WM_VERTICAL_ID": "0",
+                "WM_CHANNEL_ID": "0",
+                "WM_LOCALE_ID": "en_US"
+            },
+            "server": {
+                "sha": "8155dcada0720f5fb4229a1b80246781f5429ab7",
+                "ver": "127.0.0",
+                "name": "app-273848643-33-447742977",
+                "dc": "prod-dfw8",
+                "env": "prod-a"
+            },
+            "context": {
+                "access": true,
+                "device": "UNSPECIFIED",
+                "browser": "UNKNOWN",
+                "topTxId": "f1fe6659-85-16dcbb62350000"
+            },
+            "timing": {
+                "total": {
+                    "elapsed": 38,
+                    "active": 40,
+                    "threads": 4,
+                    "futures": 17,
+                    "delay": 0,
+                    "orchestrate": 3
+                }
+            }
+        }
+    },
+    "payload": {
+        "products": {},
+        "offers": {},
+        "idmlMap": {},
+        "reviews": {
+            "4RRTMLAUWPLF": {
+                "averageOverallRating": 4.6364,
+                "roundedAverageOverallRating": 4.6,
+                "overallRatingRange": 5.0,
+                "totalReviewCount": 11,
+                "recommendedPercentage": 72,
+                "ratingValueOneCount": 1,
+                "ratingValueTwoCount": 0,
+                "ratingValueThreeCount": 0,
+                "ratingValueFourCount": 0,
+                "ratingValueFiveCount": 10,
+                "percentageOneCount": 9,
+                "percentageTwoCount": 0,
+                "percentageThreeCount": 0,
+                "percentageFourCount": 0,
+                "percentageFiveCount": 90,
+                "activeSort": "relevancy",
+                "pagination": {
+                    "total": 9,
+                    "pages": [
+                        {
+                            "num": 1,
+                            "gap": false,
+                            "active": true,
+                            "url": "sort=relevancy&page=1"
+                        },
+                        {
+                            "num": 2,
+                            "gap": false,
+                            "active": false,
+                            "url": "sort=relevancy&page=2"
+                        }
+                    ],
+                    "currentSpan": "1-5"
+                },
+                "customerReviews": [
+                    {
+                        "reviewId": "95503297",
+                        "authorId": "7f65c96307c2adde4ea8d2d5c9ee25ff",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 4,
+                        "rating": 5.0,
+                        "reviewTitle": "Rick and Morty all Hundred years Rick and Morty...",
+                        "reviewText": "Rick and Morty is the best!  So what are you worried about?  Get in quick, and get out quicker, with the arm of Rick and Morty in your arms!",
+                        "reviewSubmissionTime": "7/27/2016",
+                        "userNickname": "TheRickestRick",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "92912669",
+                        "authorId": "1944622374f06885b70aa993f8ba3fed",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 3,
+                        "rating": 5.0,
+                        "reviewTitle": "Yay for Rick and Morty!",
+                        "reviewText": "Awesome! Best Scifi show in years. Hilarious and thoughtful all at once!",
+                        "reviewSubmissionTime": "7/2/2016",
+                        "userNickname": "artbabe33445",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "119177113",
+                        "authorId": "6ac367f3dac9f03f03e4ae5e1694e729",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 1,
+                        "rating": 5.0,
+                        "reviewTitle": "Rick and Morty DVD",
+                        "reviewText": "Looked at every store but no luck so went on line and They had and got it..didn't take to long to arrive watched it and the movie is perfect I know that if I can't find it in the store they'll more than likely have it on line",
+                        "reviewSubmissionTime": "1/6/2017",
+                        "userNickname": "craneoperator",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "91641670",
+                        "authorId": "4bd6e473feccc62f75afaa498b0e13b7",
+                        "recommended": true,
+                        "showRecommended": true,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 1,
+                        "rating": 5.0,
+                        "reviewTitle": "Great show",
+                        "reviewText": "Came in a day before it was supposed to. I love this show is funny and the price was great!",
+                        "reviewSubmissionTime": "6/17/2016",
+                        "userNickname": "Renee",
+                        "badges": [
+                            {
+                                "badgeType": "Custom",
+                                "id": "VerifiedPurchaser",
+                                "contentType": "REVIEW"
+                            }
+                        ],
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    },
+                    {
+                        "reviewId": "213037112",
+                        "authorId": "7f2deb8c33aa701c66f4641fa7b37244",
+                        "recommended": false,
+                        "showRecommended": false,
+                        "negativeFeedback": 0,
+                        "positiveFeedback": 0,
+                        "rating": 5.0,
+                        "reviewText": "Came as should\nFunny\nFor adults:::::language, adult humor, sexual verbage",
+                        "reviewSubmissionTime": "1/15/2019",
+                        "userNickname": "Renee",
+                        "userAttributes": {},
+                        "photos": [],
+                        "videos": []
+                    }
+                ],
+                "topPositiveReview": {
+                    "reviewId": "85445112",
+                    "authorId": "d1a3d8fc5b1dd9d6f20c0544ce959a95",
+                    "recommended": true,
+                    "showRecommended": true,
+                    "negativeFeedback": 1,
+                    "positiveFeedback": 7,
+                    "rating": 5.0,
+                    "reviewTitle": "Great low price.",
+                    "reviewText": "Great series.",
+                    "reviewSubmissionTime": "4/9/2016",
+                    "userNickname": "Ghost",
+                    "userAttributes": {},
+                    "photos": [],
+                    "videos": []
+                },
+                "topNegativeReview": {
+                    "reviewId": "81140994",
+                    "authorId": "90005f04b505577a4adbb4725fe070b0",
+                    "recommended": true,
+                    "showRecommended": true,
+                    "negativeFeedback": 48,
+                    "positiveFeedback": 1,
+                    "rating": 1.0,
+                    "reviewTitle": "Love it!",
+                    "reviewText": "Can't wait for season 2.",
+                    "reviewSubmissionTime": "2/26/2016",
+                    "userNickname": "Fubalubadumdum",
+                    "userAttributes": {},
+                    "photos": [],
+                    "videos": []
+                }
+            }
+        }
+    }
+};
+
 const instantPotReviews = {
     "status": "OK",
     "errors": [],
@@ -1871,7 +2094,7 @@ export async function fetchProduct(btvId) {
       }
     }).json();
     */
-    return rickAndMorty;
+    return instantPot;
 }
 
 export async function fetchReviews(itemId) {
