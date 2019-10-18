@@ -1,6 +1,8 @@
 import { fetchJSON } from "@walmart/electrode-fetch";
 
-const SERVICE_ENDPOINT = "https://www.walmart.com/terra-firma/fetch?rgs=REVIEWS_MAP";
+function getServiceEndpoint(type) {
+  return `https://www.walmart.com/terra-firma/fetch?rgs=${type}`;
+}
 
 const plugin = {
   name: "productsPlugin",
@@ -10,7 +12,7 @@ const plugin = {
       method: "GET",
       path: `${options.apiBase ? options.apiBase : "/api/"}review`,
       handler: (req) => {
-        return fetchJSON(SERVICE_ENDPOINT, {
+        return fetchJSON(getServiceEndpoint("REVIEWS_MAP"), {
             body: JSON.stringify({
               itemId: req.query.itemId,
               "paginationContext": {},
@@ -30,9 +32,9 @@ const plugin = {
         method: "GET",
         path: `${options.apiBase ? options.apiBase : "/api/"}product`,
         handler: (req) => {
-          return fetchJSON(SERVICE_ENDPOINT, {
+          return fetchJSON(getServiceEndpoint("PRODUCT"), {
               body: JSON.stringify({
-                btvId: req.query.btvId,
+                btvId: req.query.itemId,
                 "paginationContext": {},
                 "postalAddress": {},
                 "storeFrontIds": []

@@ -22,8 +22,10 @@ const Component = (props) => {
   const classes = useStyles();
   const [result, setResult ] = useState();
   useEffect(() => {
-    const fet = fetchProduct("5f3b5957-5d5d-4ff6-a40d-bfed349faf09");
-    fet.then(setResult);
+    if (result) {
+      return;
+    }
+    fetchProduct("55042612").then(setResult);
   });
   if (!result) {
     return null;
