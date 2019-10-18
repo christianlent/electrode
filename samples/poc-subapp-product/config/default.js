@@ -22,6 +22,9 @@ module.exports = {
         pathPrefix: "dist"
       }
     },
+    "products-plugin": {
+      "module": "./{{env.APP_SRC_DIR}}/server/plugins/products-plugin"
+    },
     "subapp-server": { options: { insertTokenIds: true } }
   },
   connections: {

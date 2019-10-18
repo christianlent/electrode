@@ -33,7 +33,7 @@ const Component = () => {
         display: "block",
         height: 44,
       }}>
-        <IconButton style={{margin: "6px 15px"}}>
+        <IconButton style={{margin: "0 15px", padding: 0}}>
           <img src={logo} style={{height: 32}} />
         </IconButton>
         <IconButton style={{marginLeft: 8}}>

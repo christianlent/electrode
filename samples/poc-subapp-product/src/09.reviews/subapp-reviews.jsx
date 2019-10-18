@@ -67,6 +67,11 @@ const useStyles = makeStyles(makeImportant({
     display: "inline-block",
     width: 70,
   },
+  review: {
+    borderBottom: "1px solid #e6e7e8",
+    paddingBottom: 30,
+    maxWidth: 600,
+  },
   section: {
     marginTop: 15,
     marginBottom: 7,
@@ -81,8 +86,10 @@ const Component = (props) => {
   const classes = useStyles();
   const [result, setResult ] = useState();
   useEffect(() => {
-    const fet = fetchReviews();
-    fet.then(setResult);
+    if (result) {
+      return;
+    }
+    fetchReviews("2XCYOURSDWBD").then(setResult);
   });
   if (!result) {
     return null;
@@ -159,6 +166,14 @@ const Component = (props) => {
           </Grid>
         </Grid>
       }
+      <Typography>
+        {product.pagination.currentSpan} of {product.pagination.total} review{product.pagination.total ? "s" : ""}
+      </Typography>
+      {product.customerReviews.map((review) =>
+        <div className={classes.review} key={review.reviewId}>
+          <Review review={review} details={true} />
+        </div> 
+      )}
     </div>
   );
 };

@@ -19,6 +19,38 @@ body {
   font-family: Bogle;
 }
 
+body .MuiTypography-caption {
+  font-family: Bogle;
+}
+
+body .MuiTypography-subtitle2 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-body1 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h1 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h2 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h3 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h4 {
+  font-family: Bogle;
+}
+
+body .MuiTypography-h5 {
+  font-family: Bogle;
+}
+
 strong {
   font-family: Bogle-Bold;
 }

@@ -39,6 +39,7 @@
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.0.0",
     "@material-ui/lab": "4.0.0-alpha.28",
+    "@walmart/electrode-fetch": "^6.9.1",
     "electrode-archetype-react-app": "^6.3.0",
     "electrode-confippet": "^1.5.0",
     "electrode-server": "^3.0.0",
