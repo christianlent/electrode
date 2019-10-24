@@ -23,7 +23,7 @@ module.exports = {
       }
     },
     // add some Hapi logging
-    good: {
+    "@hapi/good": {
       options: {
         ops: {
           interval: 60 * 1000
@@ -31,7 +31,7 @@ module.exports = {
         reporters: {
           myConsoleReporter: [
             {
-              module: "good-console"
+              module: "@hapi/good-console"
             },
             "stdout"
           ]

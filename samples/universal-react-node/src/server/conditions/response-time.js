@@ -41,6 +41,6 @@ module.exports = {
 
       request.app.disableSSR = true;
     }
-    reply.continue();
+    return reply.continue;
   }
 };

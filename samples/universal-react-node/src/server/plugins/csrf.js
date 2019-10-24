@@ -6,13 +6,13 @@ const plugin = {};
   Sample endpoints to demonstrate CSRF protection via the electrode-csrf-jwt module.
   Note the endpoints require no special configuration for protection to be enabled.
 */
-plugin.register = function (server, options, next) {
+plugin.register = function (server, options) {
   /* a demo GET endpoint which will return a CSRF cookie + header */
   server.route({
     method: "GET",
     path: "/1",
     handler: (req, reply) => {
-      reply("valid");
+      return "valid";
     }
   });
   /* a demo POST endpoint which will require a CSRF cookie + header */
@@ -20,15 +20,16 @@ plugin.register = function (server, options, next) {
     method: "POST",
     path: "/2",
     handler: (req, reply) => {
-      reply("valid");
+      return "valid";
     }
   });
-  next();
 };
 
 plugin.register.attributes = {
   name: "CSRFPlugin",
   version: "0.0.1"
 };
+
+plugin.name = "CSRFPlugin";
 
 module.exports = plugin;

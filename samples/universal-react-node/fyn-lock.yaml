@@ -1212,6 +1212,381 @@
  1.4.0:
   $: sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
   _: 'https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-1.4.0.tgz'
+'@hapi/accept':
+ _latest: 4.0.0
+ _:
+  3.x.x: 3.2.3
+ 3.2.3:
+  $: sha512-qEzsOJkCAJZxwj3iF83bSG9Lxy8Bpbrt8mRLNdvSALT6vlU2cYh6ZEHKEZPy4h/Mo31Su3j0rJgFF91+W1RWDQ==
+  _: 'https://registry.npmjs.org/@hapi/accept/-/accept-3.2.3.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': 8.x.x
+'@hapi/address':
+ _latest: 3.1.0
+ _:
+  '2.x.x,^2.1.2': 2.1.2
+ 2.1.2:
+  $: sha512-O4QDrx+JoGKZc6aN64L04vqa7e41tIiLU+OvKdcYaEMP97UttL0f9GIi9/0A4WAMx0uBd6SidDIhktZhgOcN8Q==
+  _: 'https://registry.npmjs.org/@hapi/address/-/address-2.1.2.tgz'
+'@hapi/ammo':
+ _latest: 4.0.0
+ _:
+  3.x.x: 3.1.1
+ 3.1.1:
+  $: sha512-NYFK27VSPGyQ/KmOQedpQH4PSjE7awLntepX68vrYtRvuJO21W1kX0bK2p3C+6ltUwtCQSvmNT8a4uMVAysC6Q==
+  _: 'https://registry.npmjs.org/@hapi/ammo/-/ammo-3.1.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/b64':
+ _latest: 4.2.1
+ _:
+  4.x.x: 4.2.1
+ 4.2.1:
+  $: sha512-zqHpQuH5CBMw6hADzKfU/IGNrxq1Q+/wTYV+OiZRQN9F3tMyk+9BUMeBvFRMamduuqL8iSp62QAnJ+7ATiYLWA==
+  _: 'https://registry.npmjs.org/@hapi/b64/-/b64-4.2.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/boom':
+ _latest: 8.0.1
+ _:
+  '7.x.x,^7.4.3': 7.4.11
+ 7.4.11:
+  $: sha512-VSU/Cnj1DXouukYxxkes4nNJonCnlogHvIff1v1RVoN4xzkKhMXX+GRmb3NyH1iar10I9WFPDv2JPwfH3GaV0A==
+  _: 'https://registry.npmjs.org/@hapi/boom/-/boom-7.4.11.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/bounce':
+ _latest: 1.3.2
+ _:
+  1.x.x: 1.3.2
+ 1.3.2:
+  $: sha512-3bnb1AlcEByFZnpDIidxQyw1Gds81z/1rSqlx4bIEE+wUN0ATj0D49B5cE1wGocy90Rp/de4tv7GjsKd5RQeew==
+  _: 'https://registry.npmjs.org/@hapi/bounce/-/bounce-1.3.2.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': ^8.3.1
+'@hapi/bourne':
+ _latest: 1.3.2
+ _:
+  1.x.x: 1.3.2
+ 1.3.2:
+  $: sha512-1dVNHT76Uu5N3eJNTYcvxee+jzX4Z9lfciqRRHCU27ihbUcYi+iSc2iml5Ke1LXe1SyJCLA0+14Jh4tXJgOppA==
+  _: 'https://registry.npmjs.org/@hapi/bourne/-/bourne-1.3.2.tgz'
+'@hapi/call':
+ _latest: 5.1.1
+ _:
+  5.x.x: 5.1.1
+ 5.1.1:
+  $: sha512-M6fC+9+K/ZB4hIdVQ8i0kc/6J5PWlW3PEWYKAAZpw0sk+28LiRTSF8BjOWwmiIjZWWs42AnEIiFJA0YrvcDnlw==
+  _: 'https://registry.npmjs.org/@hapi/call/-/call-5.1.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/boom': 7.x.x
+'@hapi/catbox':
+ _latest: 10.2.3
+ _:
+  10.x.x: 10.2.3
+ 10.2.3:
+  $: sha512-kN9hXO4NYyOHW09CXiuj5qW1syc/0XeVOBsNNk0Tz89wWNQE5h21WF+VsfAw3uFR8swn/Wj3YEVBnWqo82m/JQ==
+  _: 'https://registry.npmjs.org/@hapi/catbox/-/catbox-10.2.3.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+   '@hapi/podium': 3.x.x
+'@hapi/catbox-memory':
+ _latest: 4.1.1
+ _:
+  4.x.x: 4.1.1
+ 4.1.1:
+  $: sha512-T6Hdy8DExzG0jY7C8yYWZB4XHfc0v+p1EGkwxl2HoaPYAmW7I3E59M/IvmSVpis8RPcIoBp41ZpO2aZPBpM2Ww==
+  _: 'https://registry.npmjs.org/@hapi/catbox-memory/-/catbox-memory-4.1.1.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': 8.x.x
+'@hapi/content':
+ _latest: 4.1.0
+ _:
+  4.x.x: 4.1.0
+ 4.1.0:
+  $: sha512-hv2Czsl49hnWDEfRZOFow/BmYbKyfEknmk3k83gOp6moFn5ceHB4xVcna8OwsGfy8dxO81lhpPy+JgQEaU4SWw==
+  _: 'https://registry.npmjs.org/@hapi/content/-/content-4.1.0.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+'@hapi/cryptiles':
+ _latest: 4.2.1
+ _:
+  4.x.x: 4.2.1
+ 4.2.1:
+  $: sha512-XoqgKsHK0l/VpqPs+tr6j6vE+VQ3+2bkF2stvttmc7xAOf1oSAwHcJ0tlp/6MxMysktt1IEY0Csy3khKaP9/uQ==
+  _: 'https://registry.npmjs.org/@hapi/cryptiles/-/cryptiles-4.2.1.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+'@hapi/file':
+ _latest: 1.0.0
+ _:
+  1.x.x: 1.0.0
+ 1.0.0:
+  $: sha512-Bsfp/+1Gyf70eGtnIgmScvrH8sSypO3TcK3Zf0QdHnzn/ACnAkI6KLtGACmNRPEzzIy+W7aJX5E+1fc9GwIABQ==
+  _: 'https://registry.npmjs.org/@hapi/file/-/file-1.0.0.tgz'
+'@hapi/formula':
+ _latest: 2.0.0
+ _:
+  ^1.2.0: 1.2.0
+ 1.2.0:
+  $: sha512-UFbtbGPjstz0eWHb+ga/GM3Z9EzqKXFWIbSOFURU0A/Gku0Bky4bCk9/h//K2Xr3IrCfjFNhMm4jyZ5dbCewGA==
+  _: 'https://registry.npmjs.org/@hapi/formula/-/formula-1.2.0.tgz'
+'@hapi/good':
+ _latest: 8.2.4
+ _:
+  ^8.2.4: 8.2.4
+ 8.2.4:
+  top: 1
+  $: sha512-Paj7BX4C295I+opJ5eIV0XvLhRPcKDLpP9RsnUWGXH/gLRi1SwVMOCYAqitSBjhYSIeZoq+jMmJn6+hUg4W3ug==
+  _: 'https://registry.npmjs.org/@hapi/good/-/good-8.2.4.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+   '@hapi/oppsy': 2.x.x
+   pumpify: 1.x.x
+'@hapi/good-console':
+ _latest: 8.1.2
+ _:
+  ^8.1.2: 8.1.2
+ 8.1.2:
+  top: 1
+  $: sha512-35Uxe7+EsPsbhjQXrhCGB5Ul0W51CxYBBjN7JC95RZnFiB2DAt52pXLZ6aagUPk8yA/DM2OmIsmWJBr+N28hLw==
+  _: 'https://registry.npmjs.org/@hapi/good-console/-/good-console-8.1.2.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+   json-stringify-safe: 5.x.x
+   moment: 2.x.x
+'@hapi/hapi':
+ _latest: 18.4.0
+ _:
+  ^18.3.2: 18.4.0
+ 18.4.0:
+  $: sha512-uk9zqknRLcNVQKgrPURm85DqkdroWP8eDRekh/IPoKvC4VjdZSn6EH2eUriOwyud/CldeBS3HDIJ/PtRj3VxDQ==
+  _: 'https://registry.npmjs.org/@hapi/hapi/-/hapi-18.4.0.tgz'
+  dependencies:
+   '@hapi/accept': 3.x.x
+   '@hapi/ammo': 3.x.x
+   '@hapi/boom': 7.x.x
+   '@hapi/bounce': 1.x.x
+   '@hapi/call': 5.x.x
+   '@hapi/catbox': 10.x.x
+   '@hapi/catbox-memory': 4.x.x
+   '@hapi/heavy': 6.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 15.x.x
+   '@hapi/mimos': 4.x.x
+   '@hapi/podium': 3.x.x
+   '@hapi/shot': 4.x.x
+   '@hapi/somever': 2.x.x
+   '@hapi/statehood': 6.x.x
+   '@hapi/subtext': 6.x.x
+   '@hapi/teamwork': 3.x.x
+   '@hapi/topo': 3.x.x
+'@hapi/heavy':
+ _latest: 6.2.2
+ _:
+  6.x.x: 6.2.2
+ 6.2.2:
+  $: sha512-PY1dCCO6dsze7RlafIRhTaGeyTgVe49A/lSkxbhKGjQ7x46o/OFf7hLiRqTCDh3atcEKf6362EaB3+kTUbCsVA==
+  _: 'https://registry.npmjs.org/@hapi/heavy/-/heavy-6.2.2.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+'@hapi/hoek':
+ _latest: 8.3.2
+ _:
+  '8.x.x,^8.2.4,^8.3.0,^8.3.1': 8.3.2
+ 8.3.2:
+  $: sha512-NP5SG4bzix+EtSMtcudp8TvI0lB46mXNo8uFpTDw6tqxGx4z5yx+giIunEFA0Z7oUO4DuWrOJV9xqR2tJVEdyA==
+  _: 'https://registry.npmjs.org/@hapi/hoek/-/hoek-8.3.2.tgz'
+'@hapi/iron':
+ _latest: 5.1.4
+ _:
+  5.x.x: 5.1.4
+ 5.1.4:
+  $: sha512-+ElC+OCiwWLjlJBmm8ZEWjlfzTMQTdgPnU/TsoU5QsktspIWmWi9IU4kU83nH+X/SSya8TP8h8P11Wr5L7dkQQ==
+  _: 'https://registry.npmjs.org/@hapi/iron/-/iron-5.1.4.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/b64': 4.x.x
+   '@hapi/boom': 7.x.x
+   '@hapi/bourne': 1.x.x
+   '@hapi/cryptiles': 4.x.x
+'@hapi/joi':
+ _latest: 16.1.7
+ _:
+  15.x.x: 15.1.1
+  16.x.x: 16.1.7
+ 16.1.7:
+  $: sha512-anaIgnZhNooG3LJLrTFzgGALTiO97zRA1UkvQHm9KxxoSiIzCozB3RCNCpDnfhTJD72QlrHA8nwGmNgpFFCIeg==
+  _: 'https://registry.npmjs.org/@hapi/joi/-/joi-16.1.7.tgz'
+  dependencies:
+   '@hapi/address': ^2.1.2
+   '@hapi/formula': ^1.2.0
+   '@hapi/hoek': ^8.2.4
+   '@hapi/pinpoint': ^1.0.2
+   '@hapi/topo': ^3.1.3
+ 15.1.1:
+  $: sha512-entf8ZMOK8sc+8YfeOlM8pCfg3b5+WZIKBfUaaJT8UsjAAPjartzxIYm3TIbjvA4u+u++KbcXD38k682nVHDAQ==
+  _: 'https://registry.npmjs.org/@hapi/joi/-/joi-15.1.1.tgz'
+  dependencies:
+   '@hapi/address': 2.x.x
+   '@hapi/bourne': 1.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/topo': 3.x.x
+'@hapi/mimos':
+ _latest: 4.1.1
+ _:
+  4.x.x: 4.1.1
+ 4.1.1:
+  $: sha512-CXoi/zfcTWfKYX756eEea8rXJRIb9sR4d7VwyAH9d3BkDyNgAesZxvqIdm55npQc6S9mU3FExinMAQVlIkz0eA==
+  _: 'https://registry.npmjs.org/@hapi/mimos/-/mimos-4.1.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   mime-db: 1.x.x
+'@hapi/nigel':
+ _latest: 3.1.1
+ _:
+  3.x.x: 3.1.1
+ 3.1.1:
+  $: sha512-R9YWx4S8yu0gcCBrMUDCiEFm1SQT895dMlYoeNBp8I6YhF1BFF1iYPueKA2Kkp9BvyHdjmvrxCOns7GMmpl+Fw==
+  _: 'https://registry.npmjs.org/@hapi/nigel/-/nigel-3.1.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/vise': 3.x.x
+'@hapi/oppsy':
+ _latest: 2.1.2
+ _:
+  2.x.x: 2.1.2
+ 2.1.2:
+  $: sha512-V/KNuFemyA//sowFFpeMRY4zE6szuy8vh6v2vWDPDhZFowOIwB7kqdFvmnBogk+aHHR+iKgKCU/SuUiv/xZyzg==
+  _: 'https://registry.npmjs.org/@hapi/oppsy/-/oppsy-2.1.2.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/pez':
+ _latest: 4.1.1
+ _:
+  4.x.x: 4.1.1
+ 4.1.1:
+  $: sha512-TUa2C7Xk6J69HWrm+Ad+O6dFvdVAG0BiFUYaRsmkdWjFIfwHBCaOI1dWT/juNukSb39Lj6/mDVyjN+H4nKB3xg==
+  _: 'https://registry.npmjs.org/@hapi/pez/-/pez-4.1.1.tgz'
+  dependencies:
+   '@hapi/b64': 4.x.x
+   '@hapi/boom': 7.x.x
+   '@hapi/content': 4.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/nigel': 3.x.x
+'@hapi/pinpoint':
+ _latest: 1.0.2
+ _:
+  ^1.0.2: 1.0.2
+ 1.0.2:
+  $: sha512-dtXC/WkZBfC5vxscazuiJ6iq4j9oNx1SHknmIr8hofarpKUZKmlUVYVIhNVzIEgK5Wrc4GMHL5lZtt1uS2flmQ==
+  _: 'https://registry.npmjs.org/@hapi/pinpoint/-/pinpoint-1.0.2.tgz'
+'@hapi/podium':
+ _latest: 3.4.2
+ _:
+  3.x.x: 3.4.2
+ 3.4.2:
+  $: sha512-g9zlAkRL2uDlnEo64xzEhFLblf4fdL5Z6evAO0wJhdxEvokI/+6ryv7k6uhND481LiLzQz8qTtPYMuhH1hichw==
+  _: 'https://registry.npmjs.org/@hapi/podium/-/podium-3.4.2.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+'@hapi/shot':
+ _latest: 4.1.2
+ _:
+  4.x.x: 4.1.2
+ 4.1.2:
+  $: sha512-6LeHLjvsq/bQ0R+fhEyr7mqExRGguNTrxFZf5DyKe3CK6pNabiGgYO4JVFaRrLZ3JyuhkS0fo8iiRE2Ql2oA/A==
+  _: 'https://registry.npmjs.org/@hapi/shot/-/shot-4.1.2.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+   '@hapi/joi': 16.x.x
+'@hapi/somever':
+ _latest: 2.1.1
+ _:
+  2.x.x: 2.1.1
+ 2.1.1:
+  $: sha512-cic5Sto4KGd9B0oQSdKTokju+rYhCbdpzbMb0EBnrH5Oc1z048hY8PaZ1lx2vBD7I/XIfTQVQetBH57fU51XRA==
+  _: 'https://registry.npmjs.org/@hapi/somever/-/somever-2.1.1.tgz'
+  dependencies:
+   '@hapi/bounce': 1.x.x
+   '@hapi/hoek': 8.x.x
+'@hapi/statehood':
+ _latest: 6.1.2
+ _:
+  6.x.x: 6.1.2
+ 6.1.2:
+  $: sha512-pYXw1x6npz/UfmtcpUhuMvdK5kuOGTKcJNfLqdNptzietK2UZH5RzNJSlv5bDHeSmordFM3kGItcuQWX2lj2nQ==
+  _: 'https://registry.npmjs.org/@hapi/statehood/-/statehood-6.1.2.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/bounce': 1.x.x
+   '@hapi/bourne': 1.x.x
+   '@hapi/cryptiles': 4.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/iron': 5.x.x
+   '@hapi/joi': 16.x.x
+'@hapi/subtext':
+ _latest: 6.1.2
+ _:
+  6.x.x: 6.1.2
+ 6.1.2:
+  $: sha512-G1kqD1E2QdxpvpL26WieIyo3z0qCa/sAGSa2TJI/PYPWCR9rL0rqFvhWY774xPZ4uK1PV3TIaJcx8AruAvxclg==
+  _: 'https://registry.npmjs.org/@hapi/subtext/-/subtext-6.1.2.tgz'
+  dependencies:
+   '@hapi/boom': 7.x.x
+   '@hapi/bourne': 1.x.x
+   '@hapi/content': 4.x.x
+   '@hapi/file': 1.x.x
+   '@hapi/hoek': 8.x.x
+   '@hapi/pez': 4.x.x
+   '@hapi/wreck': 15.x.x
+'@hapi/teamwork':
+ _latest: 3.3.1
+ _:
+  3.x.x: 3.3.1
+ 3.3.1:
+  $: sha512-61tiqWCYvMKP7fCTXy0M4VE6uNIwA0qvgFoiDubgfj7uqJ0fdHJFQNnVPGrxhLWlwz0uBPWrQlBH7r8y9vFITQ==
+  _: 'https://registry.npmjs.org/@hapi/teamwork/-/teamwork-3.3.1.tgz'
+'@hapi/topo':
+ _latest: 4.0.1
+ _:
+  '3.x.x,^3.1.3': 3.1.6
+ 3.1.6:
+  $: sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
+  _: 'https://registry.npmjs.org/@hapi/topo/-/topo-3.1.6.tgz'
+  dependencies:
+   '@hapi/hoek': ^8.3.0
+'@hapi/vise':
+ _latest: 3.1.1
+ _:
+  3.x.x: 3.1.1
+ 3.1.1:
+  $: sha512-OXarbiCSadvtg+bSdVPqu31Z1JoBL+FwNYz3cYoBKQ5xq1/Cr4A3IkGpAZbAuxU5y4NL5pZFZG3d2a3ZGm/dOQ==
+  _: 'https://registry.npmjs.org/@hapi/vise/-/vise-3.1.1.tgz'
+  dependencies:
+   '@hapi/hoek': 8.x.x
+'@hapi/wreck':
+ _latest: 16.0.1
+ _:
+  15.x.x: 15.1.0
+ 15.1.0:
+  $: sha512-tQczYRTTeYBmvhsek/D49En/5khcShaBEmzrAaDjMrFXKJRuF8xA8+tlq1ETLBFwGd6Do6g2OC74rt11kzawzg==
+  _: 'https://registry.npmjs.org/@hapi/wreck/-/wreck-15.1.0.tgz'
+  dependencies:
+   '@hapi/bourne': 1.x.x
+   '@hapi/boom': 7.x.x
+   '@hapi/hoek': 8.x.x
 '@jchip/redbird':
  _latest: 1.0.0
  _:
@@ -1593,17 +1968,6 @@ above-the-fold-only-server-render:
   _: 'https://registry.npmjs.org/above-the-fold-only-server-render/-/above-the-fold-only-server-render-1.1.0.tgz'
   dependencies:
    lodash: ^4.0.0
-accept:
- _latest: 3.1.3
- _:
-  2.x.x: 2.1.4
- 2.1.4:
-  $: sha1-iHr1TO7lx/RDBGGXHsQAxh0JrLs=
-  _: 'https://registry.npmjs.org/accept/-/accept-2.1.4.tgz'
-  dependencies:
-   boom: 5.x.x
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 accepts:
  _latest: 1.3.5
  _:
@@ -1780,17 +2144,6 @@ amdefine:
  1.0.1:
   $: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
   _: 'https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz'
-ammo:
- _latest: 3.0.3
- _:
-  2.x.x: 2.0.4
- 2.0.4:
-  $: sha1-v4CqshFpjqePY+9efxE91dnokX8=
-  _: 'https://registry.npmjs.org/ammo/-/ammo-2.0.4.tgz'
-  dependencies:
-   boom: 5.x.x
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 ansi-align:
  _latest: 3.0.0
  _:
@@ -2250,14 +2603,6 @@ aws4:
  1.8.0:
   $: sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
   _: 'https://registry.npmjs.org/aws4/-/aws4-1.8.0.tgz'
-b64:
- _latest: 4.1.2
- _:
-  3.x.x: 3.0.3
- 3.0.3:
-  $: sha512-Pbeh0i6OLubPJdIdCepn8ZQHwN2MWznZHbHABSTEfQ706ie+yuxNSaPdqX1xRatT6WanaS1EazMiSg0NUW2XxQ==
-  _: 'https://registry.npmjs.org/b64/-/b64-3.0.3.tgz'
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 babel-code-frame:
  _latest: 6.26.0
  _:
@@ -2870,31 +3215,6 @@ boolbase:
  1.0.0:
   $: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
   _: 'https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz'
-boom:
- _latest: 7.3.0
- _:
-  5.x.x: 5.2.0
-  ^7.2.0: 7.3.0
- 7.3.0:
-  $: sha512-Swpoyi2t5+GhOEGw8rEsKvTxFLIDiiKoUc2gsoV6Lyr43LHBIzch3k2MvYUs8RTROrIkVJ3Al0TkaOGjnb+B6A==
-  _: 'https://registry.npmjs.org/boom/-/boom-7.3.0.tgz'
-  dependencies:
-   hoek: 6.x.x
-  deprecated: 'This module has moved and is now available at @hapi/boom. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
- 5.2.0:
-  $: sha512-Z5BTk6ZRe4tXXQlkqftmsAUANpXmuwlsF5Oov8ThoMbQRzdGTA1ngYRW160GexgOgjsFOKJz0LYhoNi+2AMBUw==
-  _: 'https://registry.npmjs.org/boom/-/boom-5.2.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
-bourne:
- _latest: 1.1.2
- _:
-  1.x.x: 1.1.2
- 1.1.2:
-  $: sha512-b2dgVkTZhkQirNMohgC00rWfpVqEi9y5tKM1k3JvoNx05ODtfQoPPd4js9CYFQoY0IM8LAmnJulEuWv74zjUOg==
-  _: 'https://registry.npmjs.org/bourne/-/bourne-1.1.2.tgz'
-  deprecated: 'This module has moved and is now available at @hapi/bourne. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
 boxen:
  _latest: 3.1.0
  _:
@@ -3271,17 +3591,6 @@ caching-transform:
    make-dir: ^2.0.0
    package-hash: ^3.0.0
    write-file-atomic: ^2.4.2
-call:
- _latest: 5.0.3
- _:
-  4.x.x: 4.0.2
- 4.0.2:
-  $: sha1-33b19R7o3Ui4VqyEAPfmnm1zmcQ=
-  _: 'https://registry.npmjs.org/call/-/call-4.0.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-   boom: 5.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 caller-callsite:
  _latest: 3.0.0
  _:
@@ -3399,28 +3708,6 @@ caseless:
  0.12.0:
   $: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
   _: 'https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz'
-catbox:
- _latest: 10.0.6
- _:
-  7.x.x: 7.1.5
- 7.1.5:
-  $: sha512-4fui5lELzqZ+9cnaAP/BcqXTH6LvWLBRtFhJ0I4FfgfXiSaZcf6k9m9dqOyChiTxNYtvLk7ZMYSf7ahMq3bf5A==
-  _: 'https://registry.npmjs.org/catbox/-/catbox-7.1.5.tgz'
-  dependencies:
-   boom: 5.x.x
-   hoek: 4.x.x
-   joi: 10.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
-catbox-memory:
- _latest: 4.0.1
- _:
-  2.x.x: 2.0.4
- 2.0.4:
-  $: sha1-Qz4lWQLK9UIz0ShkKcj03xToItU=
-  _: 'https://registry.npmjs.org/catbox-memory/-/catbox-memory-2.0.4.tgz'
-  dependencies:
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 certpem:
  _latest: 1.1.3
  _:
@@ -3970,16 +4257,6 @@ constants-browserify:
  1.0.0:
   $: sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U=
   _: 'https://registry.npmjs.org/constants-browserify/-/constants-browserify-1.0.0.tgz'
-content:
- _latest: 4.0.6
- _:
-  3.x.x: 3.0.7
- 3.0.7:
-  $: sha512-LXtnSnvE+Z1Cjpa3P9gh9kb396qV4MqpfwKy777BOSF8n6nw2vAi03tHNl0/XRqZUyzVzY/+nMXOZVnEapWzdg==
-  _: 'https://registry.npmjs.org/content/-/content-3.0.7.tgz'
-  dependencies:
-   boom: 5.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 content-disposition:
  _latest: 0.5.3
  _:
@@ -4197,16 +4474,6 @@ crypt:
  0.0.2:
   $: sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
   _: 'https://registry.npmjs.org/crypt/-/crypt-0.0.2.tgz'
-cryptiles:
- _latest: 4.1.3
- _:
-  3.x.x: 3.1.4
- 3.1.4:
-  $: sha512-8I1sgZHfVwcSOY6mSGpVU3lw/GSIZvusg8dD2+OGehCJpOhQRLNcH0qb9upQnOH4XhgxxFJSg6E2kx95deb1Tw==
-  _: 'https://registry.npmjs.org/cryptiles/-/cryptiles-3.1.4.tgz'
-  dependencies:
-   boom: 5.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 crypto-browserify:
  _latest: 3.12.0
  _:
@@ -5199,6 +5466,8 @@ electrode-archetype-opt-jest:
   dependencies:
    '@types/jest': ^23.3.14
    babel-jest: ^23.6.0
+   enzyme: ^3.0.0
+   enzyme-adapter-react-16: ^1.1.0
    eslint-plugin-jest: ^21.27.2
    jest: ^23.6.0
 electrode-archetype-opt-karma:
@@ -5211,6 +5480,11 @@ electrode-archetype-opt-karma:
   _: ../../packages/electrode-archetype-opt-karma
   dependencies:
    babel-plugin-istanbul: ^5.1.0
+   chai: ^4.0.0
+   chai-as-promised: ^7.1.1
+   chai-shallowly: ^1.0.0
+   enzyme: ^3.0.0
+   enzyme-adapter-react-16: ^1.1.0
    karma: ^3.1.1
    karma-chrome-launcher: ^2.2.0
    karma-coverage: ^2.0.0
@@ -5245,6 +5519,11 @@ electrode-archetype-opt-mocha:
   _: ../../packages/electrode-archetype-opt-mocha
   dependencies:
    '@types/mocha': 5.2.7
+   chai: ^4.0.0
+   chai-as-promised: ^7.1.1
+   chai-shallowly: ^1.0.0
+   enzyme: ^3.0.0
+   enzyme-adapter-react-16: ^1.1.0
    mocha: ^4.0.0
 electrode-archetype-opt-phantomjs:
  _latest: 1.0.1-fynlocal_h
@@ -5303,6 +5582,16 @@ electrode-archetype-opt-react:
   dependencies:
    react: ^16.0.0
    react-dom: ^16.0.0
+electrode-archetype-opt-react-intl:
+ _latest: 1.0.0-fynlocal_h
+ _:
+  ../electrode-archetype-opt-react-intl: 1.0.0-fynlocal_h
+ 1.0.0-fynlocal_h:
+  hasPI: 1
+  $: local
+  _: ../../packages/electrode-archetype-opt-react-intl
+  dependencies:
+   react-intl: ^2.1.3
 electrode-archetype-opt-sass:
  _latest: 1.0.8-fynlocal_h
  _:
@@ -5348,10 +5637,10 @@ electrode-archetype-opt-typescript:
    typescript: ^3.2.1
    '@babel/preset-typescript': ^7.1.0
 electrode-archetype-react-app:
- _latest: 6.5.15-fynlocal_h
+ _latest: 6.5.16-fynlocal_h
  _:
-  ../../packages/electrode-archetype-react-app: 6.5.15-fynlocal_h
- 6.5.15-fynlocal_h:
+  ../../packages/electrode-archetype-react-app: 6.5.16-fynlocal_h
+ 6.5.16-fynlocal_h:
   top: 1
   $: local
   _: ../../packages/electrode-archetype-react-app
@@ -5366,10 +5655,10 @@ electrode-archetype-react-app:
    electrode-archetype-opt-inferno: ^0.2.10
    electrode-archetype-opt-react: ^2.0.3
 electrode-archetype-react-app-dev:
- _latest: 6.5.15-fynlocal_h
+ _latest: 6.5.16-fynlocal_h
  _:
-  ../../packages/electrode-archetype-react-app-dev: 6.5.15-fynlocal_h
- 6.5.15-fynlocal_h:
+  ../../packages/electrode-archetype-react-app-dev: 6.5.16-fynlocal_h
+ 6.5.16-fynlocal_h:
   top: 1
   $: local
   _: ../../packages/electrode-archetype-react-app-dev
@@ -5403,9 +5692,6 @@ electrode-archetype-react-app-dev:
    babel-plugin-transform-react-remove-prop-types: ^0.4.20
    batch: ^0.6.1
    boxen: ^2.1.0
-   chai: ^4.0.0
-   chai-as-promised: ^7.1.1
-   chai-shallowly: ^1.0.0
    chalker: ^1.1.1
    chokidar: ^2.0.4
    convert-source-map: ^1.5.0
@@ -5416,8 +5702,6 @@ electrode-archetype-react-app-dev:
    electrode-hapi-compat: ^1.2.0
    electrode-node-resolver: ^2.0.0
    electrode-webpack-reporter: ^0.5.1
-   enzyme: ^3.0.0
-   enzyme-adapter-react-16: ^1.1.0
    file-loader: ^2.0.0
    filter-scan-dir: ^1.0.9
    finalhandler: ^1.1.1
@@ -5438,8 +5722,6 @@ electrode-archetype-react-app-dev:
    optional-require: ^1.0.0
    prop-types: ^15.5.6
    raw-loader: ^0.5.1
-   react-intl: ^2.1.0
-   react-test-renderer: ^16.1.1
    regenerator-runtime: ^0.13.2
    request: ^2.88.0
    require-at: ^1.0.2
@@ -5474,6 +5756,7 @@ electrode-archetype-react-app-dev:
    electrode-archetype-opt-postcss: ^1.0.3
    electrode-archetype-opt-pwa: ^1.0.5
    electrode-archetype-opt-react: ^2.0.3
+   electrode-archetype-opt-react-intl: ^1.0.0
    electrode-archetype-opt-sass: ^1.0.8
    electrode-archetype-opt-stylus: ^1.0.1
    electrode-archetype-opt-sinon: ^1.0.2
@@ -5504,7 +5787,7 @@ electrode-cdn-file-loader:
 electrode-confippet:
  _latest: 1.5.0
  _:
-  ^1.5.0: 1.5.0
+  ^1.2.10: 1.5.0
  1.5.0:
   $: sha1-aEFlFNEp5fsqzP2jazEoSbnjrzY=
   _: 'https://registry.npmjs.org/electrode-confippet/-/electrode-confippet-1.5.0.tgz'
@@ -5512,16 +5795,16 @@ electrode-confippet:
    js-yaml: ^3.5.3
    lodash: ^4.13.1
 electrode-csrf-jwt:
- _latest: 1.5.1
+ _latest: 1.5.2
  _:
-  ^1.0.0: 1.5.1
- 1.5.1:
+  ^1.5.2: 1.5.2
+ 1.5.2:
   top: 1
-  $: sha512-mWauY+1yFpwIecBjYuS0li38hIV/Brf4RaW0S9Xo8tPL5uo926qMY9k0FBcZv1K7wdfrY6LqVmp0rR2gKYB2lQ==
-  _: 'https://registry.npmjs.org/electrode-csrf-jwt/-/electrode-csrf-jwt-1.5.1.tgz'
+  $: sha512-PCA5MafScx17WYnQ/FSqvCbU+1VFA89dasLVM9F+UdgLDl6Bq8eZ/1vqFVQjkVClr7oFwianlJcenmghe84Gnw==
+  _: 'https://registry.npmjs.org/electrode-csrf-jwt/-/electrode-csrf-jwt-1.5.2.tgz'
   dependencies:
-   boom: ^7.2.0
-   electrode-hapi-compat: ^1.0.0
+   '@hapi/boom': ^7.4.3
+   electrode-hapi-compat: ^1.2.0
    jsonwebtoken: ^8.0.0
    ms: ^2.1.1
    on-headers: ^1.0.1
@@ -5529,14 +5812,10 @@ electrode-csrf-jwt:
 electrode-hapi-compat:
  _latest: 1.0.0
  _:
-  ^1.0.0: 1.0.0
   ^1.2.0: 1.2.0
  1.2.0:
   $: sha512-oalPOkP3+eLQGV/fQPKf3NRjIZkUXvjb6WflB6wRscCvy7G4JShs2I0fmYHWD/Bp/7ro+9qlno78K97HTDsteQ==
   _: 'https://registry.npmjs.org/electrode-hapi-compat/-/electrode-hapi-compat-1.2.0.tgz'
- 1.0.0:
-  $: sha512-Hiy5jKTVas8CHmX+M1Qh/bkUKuCBVFjDvrXE4ZKHa9lrsLdYc0oYqsTQ0BWYN3OZq8i7X1yXdqy+aPWEsgd0yA==
-  _: 'https://registry.npmjs.org/electrode-hapi-compat/-/electrode-hapi-compat-1.0.0.tgz'
 electrode-node-resolver:
  _latest: 2.0.0-fynlocal_h
  _:
@@ -5584,33 +5863,34 @@ electrode-redux-router-engine:
    react: '^16.0.0 || ^15.3.1 || ^0.14.8'
    react-dom: '^16.0.0 || ^15.3.1 || ^0.14.8'
 electrode-server:
- _latest: 2.2.2
+ _latest: 3.0.0
  _:
-  ^1.0.0: 1.7.1
- 1.7.1:
+  ^3.0.0: 3.0.0
+ 3.0.0:
   top: 1
-  $: sha512-Zdo5H+OhUimYYu0d43KlA1aTAS8geiKfeo0Jqy6Fqcd0Q8r8sAlwyYzHScrKPEvo2Ukr9OJ2V23ZSTsfVS6M1Q==
-  _: 'https://registry.npmjs.org/electrode-server/-/electrode-server-1.7.1.tgz'
+  $: sha512-anbGABIu0zTQgggtbzJAVXJO27o4nFXRGBYLYmlhfmVAHDsFoj6vHbrBslTVIRccMFPmR2CLMGUNjSRUGSv3gQ==
+  _: 'https://registry.npmjs.org/electrode-server/-/electrode-server-3.0.0.tgz'
   dependencies:
+   '@hapi/hapi': ^18.3.2
    async-eventemitter: ^0.2.2
    bluebird: '>= 2.10.0 <= 3.x.x'
-   chalk: ^1.1.1
-   electrode-confippet: ^1.5.0
-   hapi: '>= 11.1.4 <= 16.x.x'
+   chalk: ^2.4.2
+   electrode-confippet: ^1.2.10
    lodash: ^4.17.11
    require-at: ^1.0.1
 electrode-static-paths:
- _latest: 2.0.3
+ _latest: 3.0.0
  _:
-  ^1.0.0: 1.1.0
- 1.1.0:
+  ^3.0.0: 3.0.0
+ 3.0.0:
   top: 1
-  $: sha1-xAFg9pAY6h1ek0iIx0tNaE5FT/U=
-  _: 'https://registry.npmjs.org/electrode-static-paths/-/electrode-static-paths-1.1.0.tgz'
+  $: sha512-Y8Ojt1XWRhiwIfW9UXYBbIH7FLWDKx7TFVgTZcsXRhx8oQcjj0wC/9zIl1XqZnqU9MaBIU5zlZIm6sDJKFfKOw==
+  _: 'https://registry.npmjs.org/electrode-static-paths/-/electrode-static-paths-3.0.0.tgz'
   dependencies:
-   chalk: ^1.1.1
-   inert: ^4.0.1
-   lodash: ^4.5.1
+   chalk: ^2.4.2
+   lodash: ^4.17.11
+  peerDependencies:
+   '@hapi/inert': ^5.2.0
 electrode-webpack-reporter:
  _latest: 0.5.1
  _:
@@ -7333,36 +7613,6 @@ globule:
    glob: ~7.1.1
    lodash: ~4.17.10
    minimatch: ~3.0.2
-good:
- _latest: 8.1.2
- _:
-  ^7: 7.3.0
- 7.3.0:
-  top: 1
-  $: sha512-bZ4clzBw75zI424QUOrOnzwSM/7BrJ/2xTX75IT3spIZ052OPYEzLqdSt4mj/zZfs2OU52+/428QEmvyKUscUQ==
-  _: 'https://registry.npmjs.org/good/-/good-7.3.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   joi: 10.x.x
-   oppsy: 1.x.x
-   pumpify: 1.3.x
-  peerDependencies:
-   hapi: '>=10.x.x'
-  deprecated: 'This module has moved and is now available at @hapi/good. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
-good-console:
- _latest: 8.0.0
- _:
-  ^7.1.0: 7.1.0
- 7.1.0:
-  top: 1
-  $: sha1-68+UjXrbiJgUW9x28vfN1kZBtKA=
-  _: 'https://registry.npmjs.org/good-console/-/good-console-7.1.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   joi: 12.x.x
-   json-stringify-safe: 5.0.x
-   moment: 2.20.x
-  deprecated: 'This module has moved and is now available at @hapi/good-console. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
 got:
  _latest: 9.6.0
  _:
@@ -7449,34 +7699,6 @@ handlebars:
    source-map: ^0.6.1
   optionalDependencies:
    uglify-js: ^3.1.4
-hapi:
- _latest: 18.1.0
- _:
-  '>= 11.1.4 <= 16.x.x': 16.7.0
- 16.7.0:
-  $: sha512-UeMX1LMWmHEIgMlwZGK/3lhI7X0VRvOioVply0Y9qF+/O5woGdQzNB8ZmDnLOBjnB6bdWWHyo5DEamuCsE1vmg==
-  _: 'https://registry.npmjs.org/hapi/-/hapi-16.7.0.tgz'
-  dependencies:
-   accept: 2.x.x
-   ammo: 2.x.x
-   boom: 5.x.x
-   call: 4.x.x
-   catbox: 7.x.x
-   catbox-memory: 2.x.x
-   cryptiles: 3.x.x
-   heavy: 4.x.x
-   hoek: 4.x.x
-   iron: 4.x.x
-   items: 2.x.x
-   joi: 11.x.x
-   mimos: 3.x.x
-   podium: 1.x.x
-   shot: 3.x.x
-   somever: 1.x.x
-   statehood: 5.x.x
-   subtext: 5.x.x
-   topo: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 har-schema:
  _latest: 2.0.0
  _:
@@ -7665,18 +7887,6 @@ he:
  1.1.1:
   $: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
   _: 'https://registry.npmjs.org/he/-/he-1.1.1.tgz'
-heavy:
- _latest: 6.1.2
- _:
-  4.x.x: 4.0.4
- 4.0.4:
-  $: sha1-NskTNsAMz+hSyqTRUwhjNc0vAOk=
-  _: 'https://registry.npmjs.org/heavy/-/heavy-4.0.4.tgz'
-  dependencies:
-   boom: 5.x.x
-   hoek: 4.x.x
-   joi: 10.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 hex-color-regex:
  _latest: 1.1.0
  _:
@@ -7709,19 +7919,6 @@ hmac-drbg:
    hash.js: ^1.0.3
    minimalistic-assert: ^1.0.0
    minimalistic-crypto-utils: ^1.0.1
-hoek:
- _latest: 6.1.3
- _:
-  4.x.x: 4.2.1
-  6.x.x: 6.1.3
- 6.1.3:
-  $: sha512-YXXAAhmF9zpQbC7LEcREFtXfGq5K1fmd+4PHkBq8NUqmzW3G+Dq10bI/i0KucLRwss3YYFQ0fSfoxBZYiGUqtQ==
-  _: 'https://registry.npmjs.org/hoek/-/hoek-6.1.3.tgz'
-  deprecated: 'This module has moved and is now available at @hapi/hoek. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
- 4.2.1:
-  $: sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
-  _: 'https://registry.npmjs.org/hoek/-/hoek-4.2.1.tgz'
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 hoist-non-react-statics:
  _latest: 3.3.0
  _:
@@ -8125,21 +8322,6 @@ indexof:
  0.0.1:
   $: sha1-gtwzbSMrkGIXnQWrMpOmYFn9Q10=
   _: 'https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz'
-inert:
- _latest: 5.1.3
- _:
-  ^4.0.1: 4.2.1
- 4.2.1:
-  $: sha512-qmbbZYPSzU/eOUOStPQvSjrU9IR1Q3uDtsEsVwnBQeZG43xu7Nrj6yuUrX3ice/03rv5dj/KiKB+NGCbiqH+aQ==
-  _: 'https://registry.npmjs.org/inert/-/inert-4.2.1.tgz'
-  dependencies:
-   ammo: 2.x.x
-   boom: 5.x.x
-   hoek: 4.x.x
-   items: 2.x.x
-   joi: 10.x.x
-   lru-cache: 4.1.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 infer-owner:
  _latest: 1.0.4
  _:
@@ -8305,18 +8487,6 @@ ipaddr.js:
  1.9.0:
   $: sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
   _: 'https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.0.tgz'
-iron:
- _latest: 5.0.6
- _:
-  4.x.x: 4.0.5
- 4.0.5:
-  $: sha1-TwQszri5c480a1mqc0yDqJvDFCg=
-  _: 'https://registry.npmjs.org/iron/-/iron-4.0.5.tgz'
-  dependencies:
-   hoek: 4.x.x
-   boom: 5.x.x
-   cryptiles: 3.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 is:
  _latest: 3.3.0
  _:
@@ -8815,19 +8985,6 @@ isbinaryfile:
   _: 'https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-3.0.3.tgz'
   dependencies:
    buffer-alloc: ^1.2.0
-isemail:
- _latest: 3.2.0
- _:
-  2.x.x: 2.2.1
-  3.x.x: 3.2.0
- 3.2.0:
-  $: sha512-zKqkK+O+dGqevc93KNsbZ/TqTUFd46MwWjYOoMrjIMZ51eU7DtQG3Wmd9SQQT7i7RVnuTPEiYEWHU3MSbxC1Tg==
-  _: 'https://registry.npmjs.org/isemail/-/isemail-3.2.0.tgz'
-  dependencies:
-   punycode: 2.x.x
- 2.2.1:
-  $: sha1-A1PT2aYpUQgMJiwqoKQrjqjp4qY=
-  _: 'https://registry.npmjs.org/isemail/-/isemail-2.2.1.tgz'
 isexe:
  _latest: 2.0.0
  _:
@@ -9055,14 +9212,6 @@ isurl:
   dependencies:
    has-to-string-tag-x: ^1.2.0
    is-object: ^1.0.1
-items:
- _latest: 2.1.2
- _:
-  2.x.x: 2.1.2
- 2.1.2:
-  $: sha512-kezcEqgB97BGeZZYtX/MA8AG410ptURstvnz5RAgyFZ8wQFPMxHY8GpTq+/ZHKT3frSlIthUq7EvLt9xn3TvXg==
-  _: 'https://registry.npmjs.org/items/-/items-2.1.2.tgz'
-  deprecated: 'This module has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version of hapi to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 jaro-winkler:
  _latest: 0.2.8
  _:
@@ -9465,37 +9614,6 @@ jimp:
    stream-to-buffer: ^0.1.0
    tinycolor2: ^1.1.2
    url-regex: ^3.0.0
-joi:
- _latest: 14.3.1
- _:
-  10.x.x: 10.6.0
-  11.x.x: 11.4.0
-  12.x.x: 12.0.0
- 12.0.0:
-  $: sha512-z0FNlV4NGgjQN1fdtHYXf5kmgludM65fG/JlXzU6+rwkt9U5UWuXVYnXa2FpK0u6+qBuCmrm5byPNuiiddAHvQ==
-  _: 'https://registry.npmjs.org/joi/-/joi-12.0.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   isemail: 3.x.x
-   topo: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
- 11.4.0:
-  $: sha512-O7Uw+w/zEWgbL6OcHbyACKSj0PkQeUgmehdoXVSxt92QFCq4+1390Rwh5moI2K/OgC7D8RHRZqHZxT2husMJHA==
-  _: 'https://registry.npmjs.org/joi/-/joi-11.4.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   isemail: 3.x.x
-   topo: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
- 10.6.0:
-  $: sha512-hBF3LcqyAid+9X/pwg+eXjD2QBZI5eXnBFJYaAkH4SK3mp9QSRiiQnDYlmlz5pccMvnLcJRS4whhDOTCkmsAdQ==
-  _: 'https://registry.npmjs.org/joi/-/joi-10.6.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   isemail: 2.x.x
-   items: 2.x.x
-   topo: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 jpeg-js:
  _latest: 0.3.4
  _:
@@ -9633,7 +9751,7 @@ json-stable-stringify-without-jsonify:
 json-stringify-safe:
  _latest: 5.0.1
  _:
-  '5.0.x,~5.0.1': 5.0.1
+  '5.x.x,~5.0.1': 5.0.1
  5.0.1:
   $: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
   _: 'https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz'
@@ -10281,7 +10399,7 @@ lodash:
  _latest: 4.17.11
  _:
   '^3.2.0,^3.5.0': 3.10.1
-  '^4.0.0,^4.0.1,^4.11.1,^4.13.1,^4.15.0,^4.17.10,^4.17.11,^4.17.4,^4.17.5,^4.2.0,^4.3.0,^4.5.0,^4.5.1,^4.6.1,~4.17.10': 4.17.11
+  '^4.0.0,^4.0.1,^4.11.1,^4.13.1,^4.15.0,^4.17.10,^4.17.11,^4.17.4,^4.17.5,^4.2.0,^4.3.0,^4.5.0,^4.6.1,~4.17.10': 4.17.11
   ^4.17.13: 4.17.15
   ~2.4.1: 2.4.2
  4.17.15:
@@ -10971,17 +11089,6 @@ mimic-response:
  1.0.1:
   $: sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
   _: 'https://registry.npmjs.org/mimic-response/-/mimic-response-1.0.1.tgz'
-mimos:
- _latest: 4.0.2
- _:
-  3.x.x: 3.0.3
- 3.0.3:
-  $: sha1-uRCQcq03jCty9qAQHEPd+ys2ZB8=
-  _: 'https://registry.npmjs.org/mimos/-/mimos-3.0.3.tgz'
-  dependencies:
-   hoek: 4.x.x
-   mime-db: 1.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 min-document:
  _latest: 2.19.0
  _:
@@ -11121,7 +11228,7 @@ mocha:
 moment:
  _latest: 2.24.0
  _:
-  2.20.x: 2.20.1
+  2.x.x: 2.20.1
  2.20.1:
   $: sha512-Yh9y73JRljxW5QxN08Fner68eFLxM5ynNOAw2LbIB1YAGeQzZT8QFSUvkAz609Zf+IHhhaUxqZK8dG3W/+HEvg==
   _: 'https://registry.npmjs.org/moment/-/moment-2.20.1.tgz'
@@ -11312,17 +11419,6 @@ nice-try:
  1.0.5:
   $: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
   _: 'https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz'
-nigel:
- _latest: 3.0.4
- _:
-  2.x.x: 2.0.2
- 2.0.2:
-  $: sha1-k6GGb7DFLYc5CqdeKxYfS1x15bE=
-  _: 'https://registry.npmjs.org/nigel/-/nigel-2.0.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-   vise: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 nise:
  _latest: 1.4.10
  _:
@@ -11928,17 +12024,6 @@ opn:
   _: 'https://registry.npmjs.org/opn/-/opn-5.5.0.tgz'
   dependencies:
    is-wsl: ^1.1.0
-oppsy:
- _latest: 2.0.1
- _:
-  1.x.x: 1.0.2
- 1.0.2:
-  $: sha1-mAFM1pZ2U6g8//pVQibckAULqtQ=
-  _: 'https://registry.npmjs.org/oppsy/-/oppsy-1.0.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-   items: 2.x.x
-  deprecated: 'This module has moved and is now available at @hapi/oppsy. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.'
 optimist:
  _latest: 0.6.1
  _:
@@ -12498,20 +12583,6 @@ performance-now:
  2.1.0:
   $: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
   _: 'https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz'
-pez:
- _latest: 4.0.5
- _:
-  2.x.x: 2.1.5
- 2.1.5:
-  $: sha1-XsLMYlAMw+tCNtSkFM9aF7XrUAc=
-  _: 'https://registry.npmjs.org/pez/-/pez-2.1.5.tgz'
-  dependencies:
-   b64: 3.x.x
-   boom: 5.x.x
-   content: 3.x.x
-   hoek: 4.x.x
-   nigel: 2.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 phantomjs-prebuilt:
  _latest: 2.1.16
  _:
@@ -12650,18 +12721,6 @@ pngjs:
  3.4.0:
   $: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==
   _: 'https://registry.npmjs.org/pngjs/-/pngjs-3.4.0.tgz'
-podium:
- _latest: 3.2.0
- _:
-  1.x.x: 1.3.0
- 1.3.0:
-  $: sha512-ZIujqk1pv8bRZNVxwwwq0BhXilZ2udycQT3Kp8ah3f3TcTmVg7ILJsv/oLf47gRa2qeiP584lNq+pfvS9U3aow==
-  _: 'https://registry.npmjs.org/podium/-/podium-1.3.0.tgz'
-  dependencies:
-   hoek: 4.x.x
-   items: 2.x.x
-   joi: 10.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 portfinder:
  _latest: 1.0.20
  _:
@@ -13751,9 +13810,9 @@ pump:
    end-of-stream: ^1.1.0
    once: ^1.3.1
 pumpify:
- _latest: 1.5.1
+ _latest: 2.0.1
  _:
-  '1.3.x,^1.3.3': 1.3.6
+  '1.x.x,^1.3.3': 1.3.6
  1.3.6:
   $: sha512-BurGAcvezsINL5US9T9wGHHcLNrG6MCp//ECtxron3vcR+Rfx5Anqq7HbZXNJvFQli8FGVsWCAvywEJFV5Hx/Q==
   _: 'https://registry.npmjs.org/pumpify/-/pumpify-1.3.6.tgz'
@@ -13765,8 +13824,8 @@ punycode:
  _latest: 2.1.1
  _:
   1.3.2: 1.3.2
-  '2.x.x,^2.1.0': 2.1.1
   '^1.2.4,^1.4.1': 1.4.1
+  ^2.1.0: 2.1.1
  2.1.1:
   $: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
   _: 'https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz'
@@ -14021,9 +14080,9 @@ react-dom:
   peerDependencies:
    react: ^16.0.0
 react-intl:
- _latest: 2.8.0
+ _latest: 3.4.0
  _:
-  ^2.1.0: 2.8.0
+  ^2.1.3: 2.8.0
  2.8.0:
   $: sha512-1cSasNkHxZOXYYhms9Q1tSEWF8AWZQNq3nPLB/j8mYV0ZTSt2DhGQXHfKrKQMu4cgj9J1Crqg7xFPICTBgzqtQ==
   _: 'https://registry.npmjs.org/react-intl/-/react-intl-2.8.0.tgz'
@@ -14157,7 +14216,7 @@ react-router-dom:
 react-test-renderer:
  _latest: 16.8.6
  _:
-  '^16.0.0-0,^16.1.1': 16.8.6
+  ^16.0.0-0: 16.8.6
  16.8.6:
   $: sha512-H2srzU5IWYT6cZXof6AhUcx/wEyJddQ8l7cLM/F7gDXYyPr4oq+vCIxJYXVGhId1J706sqziAjuOEjyNkfgoEw==
   _: 'https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-16.8.6.tgz'
@@ -15294,17 +15353,6 @@ shellwords:
  0.1.1:
   $: sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
   _: 'https://registry.npmjs.org/shellwords/-/shellwords-0.1.1.tgz'
-shot:
- _latest: 4.0.7
- _:
-  3.x.x: 3.4.2
- 3.4.2:
-  $: sha1-Hlw/bysmZJrcQvfrNQIUpaApHWc=
-  _: 'https://registry.npmjs.org/shot/-/shot-3.4.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-   joi: 10.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 signal-exit:
  _latest: 3.0.2
  _:
@@ -15532,16 +15580,6 @@ sockjs-client:
    inherits: ^2.0.3
    json3: ^3.3.2
    url-parse: ^1.4.3
-somever:
- _latest: 2.0.0
- _:
-  1.x.x: 1.0.1
- 1.0.1:
-  $: sha512-PCDMBcega4n7wuBUKmkiXidF3cOwtHHGg2qJYl0Rkw7StZqORoCgqce7HUuWNta/NAiQhwLDezNnTANxEWPCGA==
-  _: 'https://registry.npmjs.org/somever/-/somever-1.0.1.tgz'
-  dependencies:
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 sonic-boom:
  _latest: 0.7.4
  _:
@@ -15768,22 +15806,6 @@ stack-utils:
  1.0.2:
   $: sha512-MTX+MeG5U994cazkjd/9KNAapsHnibjMLnfXodlkXw76JEea0UiNzrqidzo1emMwk7w5Qhc9jd4Bn9TBb1MFwA==
   _: 'https://registry.npmjs.org/stack-utils/-/stack-utils-1.0.2.tgz'
-statehood:
- _latest: 6.0.9
- _:
-  5.x.x: 5.0.4
- 5.0.4:
-  $: sha512-6/feFLqqHylvA/dHwJA0DgXvbEcKgbhRUeljsuu6+cIr8PO88nax7Wc+celZlPTncqT2arsxXL8P329Q1yfe9Q==
-  _: 'https://registry.npmjs.org/statehood/-/statehood-5.0.4.tgz'
-  dependencies:
-   boom: 5.x.x
-   bourne: 1.x.x
-   cryptiles: 3.x.x
-   hoek: 4.x.x
-   iron: 4.x.x
-   items: 2.x.x
-   joi: 12.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 static-extend:
  _latest: 0.1.2
  _:
@@ -16106,21 +16128,6 @@ subapp-util:
   dependencies:
    filter-scan-dir: ^1.0.9
    optional-require: ^1.0.0
-subtext:
- _latest: 6.0.12
- _:
-  5.x.x: 5.0.1
- 5.0.1:
-  $: sha512-zH/jaUKJ/bkrTpEe3zuTFIRnqAwv5xcGpXA2JaxEc30KRAT4k78jZnRqM45snjBSZAuvpI8chRUh1VZprcUVfw==
-  _: 'https://registry.npmjs.org/subtext/-/subtext-5.0.1.tgz'
-  dependencies:
-   boom: 5.x.x
-   bourne: 1.x.x
-   content: 3.x.x
-   hoek: 4.x.x
-   pez: 2.x.x
-   wreck: 12.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 sudo-prompt:
  _latest: 9.0.0
  _:
@@ -16541,16 +16548,6 @@ to-regex-range:
   dependencies:
    is-number: ^3.0.0
    repeat-string: ^1.6.1
-topo:
- _latest: 3.0.3
- _:
-  2.x.x: 2.0.2
- 2.0.2:
-  $: sha1-zVYVdSU5BXwNwEkaYhw7xvvh0YI=
-  _: 'https://registry.npmjs.org/topo/-/topo-2.0.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 touch:
  _latest: 3.1.0
  _:
@@ -17138,16 +17135,6 @@ vinyl:
    clone: ^1.0.0
    clone-stats: ^0.0.1
    replace-ext: 0.0.1
-vise:
- _latest: 3.0.2
- _:
-  2.x.x: 2.0.2
- 2.0.2:
-  $: sha1-awjo+0y3bjpQzW3Q7DczjoEaDTk=
-  _: 'https://registry.npmjs.org/vise/-/vise-2.0.2.tgz'
-  dependencies:
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 vm-browserify:
  _latest: 1.1.0
  _:
@@ -17574,17 +17561,6 @@ wrappy:
  1.0.2:
   $: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
   _: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz'
-wreck:
- _latest: 14.2.0
- _:
-  12.x.x: 12.5.1
- 12.5.1:
-  $: sha512-l5DUGrc+yDyIflpty1x9XuMj1ehVjC/dTbF3/BasOO77xk0EdEa4M/DuOY8W88MQDAD0fEDqyjc8bkIMHd2E9A==
-  _: 'https://registry.npmjs.org/wreck/-/wreck-12.5.1.tgz'
-  dependencies:
-   boom: 5.x.x
-   hoek: 4.x.x
-  deprecated: 'This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).'
 write:
  _latest: 1.0.3
  _:

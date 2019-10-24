@@ -45,8 +45,8 @@ module.exports = _opts => {
     ) {
       request.app.disableSSR = true;
 
-      return reply.continue();
+      return reply.continue;
     }
-    return reply.continue();
+    return reply.continue;
   };
 };

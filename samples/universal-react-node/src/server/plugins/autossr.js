@@ -6,7 +6,7 @@ const responseTimeCondition = require("../conditions/response-time");
 
 const ElectrodeSSRFlag = {};
 
-ElectrodeSSRFlag.register = function (server, options, next) {
+ElectrodeSSRFlag.register = function (server, options) {
   const _opts = Object.assign({
     disabled: {}
   }, options);
@@ -27,18 +27,18 @@ ElectrodeSSRFlag.register = function (server, options, next) {
     }
 
     const responseTimeDetector = responseTimeCondition.detector(_opts);
-    server.on("response", responseTimeDetector);
+    server.events.on("response", responseTimeDetector);
 
     const responseTimeActor = responseTimeCondition.actor;
     server.ext("onPreHandler", responseTimeActor);
   }
-
-  next();
 };
 
 ElectrodeSSRFlag.register.attributes = {
   name: "ElectrodeSSRFlag",
   version: "1.0.0"
 };
+
+ElectrodeSSRFlag.name = "ElectrodeSSRFlag";
 
 module.exports = ElectrodeSSRFlag;
