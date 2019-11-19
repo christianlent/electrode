@@ -1,17 +1,9 @@
 "use strict";
 
-const Path = require("path");
-
 module.exports = {
   path: [
     "/",
-    { "/home": ["post"] },
-    "/products",
-    "/deals",
-    "/stores",
-    "/contact",
-    "/account",
-    "/cart"
+    "/product/{productId}"
   ],
   pageTitle: "Product Page",
   // Specify the HTML index generation template

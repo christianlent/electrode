@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { loadSubApp } from "subapp-web";
 import { Fab, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import { fetchProduct } from "../components/api";
+import { fetchProduct, getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
 
 const useStyles = makeStyles(makeImportant({
@@ -36,7 +36,7 @@ const Component = (props) => {
     if (result) {
       return;
     }
-    fetchProduct("55042612").then(setResult);
+    fetchProduct(getItemId()).then(setResult);
   });
   if (!result) {
     return null;

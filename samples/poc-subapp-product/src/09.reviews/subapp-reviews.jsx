@@ -4,7 +4,7 @@ import { Button, Fab, Grid, LinearProgress, Typography } from '@material-ui/core
 import { makeStyles } from '@material-ui/styles';
 import ThumbUpOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import Rating from '@material-ui/lab/Rating';
-import { fetchReviews } from "../components/api";
+import { fetchProduct, fetchReviews, getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
 import Review from "../components/review";
 
@@ -89,7 +89,12 @@ const Component = (props) => {
     if (result) {
       return;
     }
-    fetchReviews("2XCYOURSDWBD").then(setResult);
+    fetchProduct(getItemId())
+      .then((productResult) => {
+        const product = productResult.payload.products[productResult.payload.selected.product];
+        return fetchReviews(product.productId);
+      })
+      .then(setResult);
   });
   if (!result) {
     return null;

@@ -84,7 +84,7 @@ const Component = (props) => {
           <Typography className={classes.subtle} variant="subtitle2">
             {review.userNickname}, {new Date(review.reviewSubmissionTime).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </Typography>
-          {review.badges.find((badge) => badge.id === 'VerifiedPurchaser') &&
+          {(review.badges || []).find((badge) => badge.id === 'VerifiedPurchaser') &&
             <React.Fragment>
               <Done className={`${classes.subtle} ${classes.title}`} />
               &nbsp;&nbsp;&nbsp;<span className={`${classes.subtle} ${classes.title}`}>Verified Purchaser</span>

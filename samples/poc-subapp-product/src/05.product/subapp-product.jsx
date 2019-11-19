@@ -6,7 +6,7 @@ import HouseOutlined from '@material-ui/icons/HouseOutlined';
 import LocalShippingOutlined from '@material-ui/icons/LocalShippingOutlined';
 import Menu from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/styles';
-import { fetchProduct } from "../components/api";
+import { fetchProduct, getItemId } from "../components/api";
 import Rating from '@material-ui/lab/Rating';
 import Gallery from "../components/gallery";
 import logo from "../components/logo.svg";
@@ -99,7 +99,7 @@ const Component = (props) => {
     if (result) {
       return;
     }
-    fetchProduct("55042612").then(setResult);
+    fetchProduct(getItemId()).then(setResult);
   });
   if (!result) {
     return null;
