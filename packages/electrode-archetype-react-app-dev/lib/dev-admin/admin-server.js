@@ -9,9 +9,11 @@ const boxen = require("boxen");
 const ck = require("chalker");
 const chokidar = require("chokidar");
 const WebpackDevRelay = require("./webpack-dev-relay");
+const { displayLogs } = require("./log-reader");
 const { fork } = require("child_process");
 const ConsoleIO = require("./console-io");
 const makeDefer = require("@xarc/defer");
+const logger = require("electrode-archetype-react-app/lib/logger");
 
 const APP_SERVER_NAME = "your app server";
 const DEV_SERVER_NAME = "Electrode webpack dev server";
@@ -51,6 +53,7 @@ class AdminServer {
 
  <white.inverse>For your app server</>
    <magenta>A</> - Restart <magenta>D</> - <cyan>inspect-brk</> mode <magenta>I</> - <cyan>inspect</> mode <magenta>K</> - Kill&nbsp;
+   <magenta>L</> - Show Logs&nbsp;<magenta>0-6</> - Show Logs By Level
  <white.inverse>For Electrode webpack dev server</>  ${this._wds}
    <magenta>W</> - Restart <magenta>E</> - <cyan>inspect-brk</> mode <magenta>R</> - <cyan>inspect</> mode <magenta>X</> - Kill&nbsp;
  ${proxyItem}<magenta>M</> - Show this menu <magenta>Q</> - Shutdown`;
@@ -116,6 +119,15 @@ class AdminServer {
     const handlers = {
       q: () => this._quit(),
       m: () => this.showMenu(),
+      //logs
+      l: () => this.displayLogs(),
+      0: () => this.displayLogs(0),
+      1: () => this.displayLogs(1),
+      2: () => this.displayLogs(2),
+      3: () => this.displayLogs(3),
+      4: () => this.displayLogs(4),
+      5: () => this.displayLogs(5),
+      6: () => this.displayLogs(6),
       // app server
       a: () => this.startAppServer(),
       d: () => this.startAppServer("--inspect-brk"),
@@ -241,7 +253,7 @@ class AdminServer {
               writeStatusMessage(out);
             } else {
               clearStatusMessage(out);
-              out.write(this._wds + l.replace(cwdRegex, ".") + "\n");
+              logger.info(this._wds + l.replace(cwdRegex, "."));
             }
           });
       };
@@ -407,6 +419,10 @@ ${info.name} - assuming it started.</>`);
     }
 
     return defer.promise;
+  }
+
+  displayLogs(maxLevel = 6) {
+    displayLogs(maxLevel);
   }
 
   //
