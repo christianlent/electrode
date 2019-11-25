@@ -1,10 +1,14 @@
+"use strict";
+
 const AnsiConvert = require("ansi-to-html");
 const ck = require("chalker");
 const fs = require("fs");
-const readline = require('readline');
+const readline = require("readline");
 const convert = new AnsiConvert();
 
-const LEVELS = { 
+const DefaultMaxLevel = 6;
+
+const Levels = {
   error: {
     color: "red",
     index: 0,
@@ -34,18 +38,18 @@ const LEVELS = {
   silly: {
     index: 6,
     name: "silly"
-  },
+  }
 };
 
-async function getLogsByLine(maxLevel = 6, handleLogLine) {
+async function getLogsByLine(maxLevel = DefaultMaxLevel, handleLogLine) {
   return new Promise((resolve) => {
     const readInterface = readline.createInterface({
-      input: fs.createReadStream("archetype-debug.log"),
+      input: fs.createReadStream("archetype-debug.log")
     });
-  
+
     readInterface.on("line", (event) => {
       event = JSON.parse(event);
-      const levelInfo = LEVELS[event.level];
+      const levelInfo = Levels[event.level];
       if (levelInfo.index > maxLevel) {
         return;
       }
@@ -55,14 +59,14 @@ async function getLogsByLine(maxLevel = 6, handleLogLine) {
   });
 }
 
-async function getLogs(maxLevel = 6) {
+async function getLogs(maxLevel = DefaultMaxLevel) {
   const logs = [];
   await getLogsByLine(maxLevel, (event) => logs.push(event));
   return logs;
 }
 
 function getLogEventAsAnsi(event) {
-  const levelInfo = LEVELS[event.level];
+  const levelInfo = Levels[event.level];
   const name = levelInfo.color
     ? ck(`<${levelInfo.color}>${levelInfo.name}</>`)
     : levelInfo.name;
@@ -70,15 +74,15 @@ function getLogEventAsAnsi(event) {
 }
 
 function getLogEventAsHtml(event) {
-  const levelInfo = LEVELS[event.level];
+  const levelInfo = Levels[event.level];
   const name = levelInfo.color
     ? `<span style="color: ${levelInfo.color}">${levelInfo.name}</span>`
     : levelInfo.name;
   return `${name}: ${convert.toHtml(event.message)}`;
 }
 
-
-async function displayLogs(maxLevel = 6, show = console.log) {
+// eslint-disable-next-line no-console
+async function displayLogs(maxLevel = DefaultMaxLevel, show = console.log) {
   await getLogsByLine(maxLevel, (event) => show(getLogEventAsAnsi(event, show)));
 }
 
@@ -87,5 +91,6 @@ module.exports = {
   getLogs,
   getLogEventAsAnsi,
   getLogEventAsHtml,
-  displayLogs
+  displayLogs,
+  Levels
 };

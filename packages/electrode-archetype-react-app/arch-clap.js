@@ -56,11 +56,6 @@ const logger = require("./lib/logger");
 
 const jestTestDirectories = ["_test_", "_tests_", "__test__", "__tests__"];
 
-const xclapLogger = require("xclap/lib/logger");
-xclapLogger.write = (output) => {
-  logger.info(output.trim());
-};
-
 function quote(str) {
   return str.startsWith(`"`) ? str : `"${str}"`;
 }

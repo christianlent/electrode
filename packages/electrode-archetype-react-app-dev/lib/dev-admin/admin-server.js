@@ -8,7 +8,9 @@ const _ = require("lodash");
 const boxen = require("boxen");
 const ck = require("chalker");
 const chokidar = require("chokidar");
+const readline = require("readline");
 const WebpackDevRelay = require("./webpack-dev-relay");
+const { parse } = require("./log-parser");
 const { displayLogs } = require("./log-reader");
 const { fork } = require("child_process");
 const ConsoleIO = require("./console-io");
@@ -53,10 +55,9 @@ class AdminServer {
 
  <white.inverse>For your app server</>
    <magenta>A</> - Restart <magenta>D</> - <cyan>inspect-brk</> mode <magenta>I</> - <cyan>inspect</> mode <magenta>K</> - Kill&nbsp;
-   <magenta>L</> - Show Logs&nbsp;<magenta>0-6</> - Show Logs By Level
  <white.inverse>For Electrode webpack dev server</>  ${this._wds}
    <magenta>W</> - Restart <magenta>E</> - <cyan>inspect-brk</> mode <magenta>R</> - <cyan>inspect</> mode <magenta>X</> - Kill&nbsp;
- ${proxyItem}<magenta>M</> - Show this menu <magenta>Q</> - Shutdown`;
+ ${proxyItem}<magenta>M</> - Show this menu&nbsp;<magenta>L</> or <magenta>0-6</> - Show Logs&nbsp;<magenta>Q</> - Shutdown`;
     this._io.show(boxen(menu, { margin: { left: 5 } }));
   }
 
@@ -253,7 +254,7 @@ class AdminServer {
               writeStatusMessage(out);
             } else {
               clearStatusMessage(out);
-              logger.info(this._wds + l.replace(cwdRegex, "."));
+              out.write(this._wds + l.replace(cwdRegex, ".") + "\n");
             }
           });
       };
@@ -304,12 +305,22 @@ class AdminServer {
       noTimeoutCheck: skipWatch,
       passThruArgs: this._passThru,
       waitStart: async info => {
-        info._child.stdout.on("data", data => {
-          process.stdout.write(data);
+        const readStdout = readline.createInterface({
+          input: info._child.stdout
         });
 
-        info._child.stderr.on("data", data => {
-          process.stderr.write(data);
+        readStdout.on("line", (data) => {
+          const { level, message } = parse(data.toString().trim());
+          logger[level](message);
+        });
+
+        const readStderr = readline.createInterface({
+          input: info._child.stderr
+        });
+
+        readStderr.on("line", (data) => {
+          const { level, message } = parse(data.toString().trim());
+          logger[level](message);
         });
 
         await this.waitForAppServerStart(info);

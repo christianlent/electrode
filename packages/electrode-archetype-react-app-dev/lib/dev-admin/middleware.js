@@ -164,6 +164,7 @@ class Middleware {
     this.cwdContextBaseUrl = urlJoin(this.devBaseUrl, "/memfs");
     this.reporterUrl = urlJoin(this.devBaseUrl, "/reporter");
     this.logUrl = urlJoin(this.devBaseUrl, "/log");
+    this.logEventsUrl = urlJoin(this.devBaseUrl, "/log-events");
     this.dllDevUrl = urlJoin(this.devBaseUrl, "/dll");
 
     const ISO_LOADER_CONFIG = ".isomorphic-loader-config.json";
@@ -350,40 +351,17 @@ ${jumpToError}</body></html>
       );
     };
 
-    const serveLog = async () => {
-      const levels = ["error", "warn", "info", "http", "verbose", "debug", "silly"];
-      const selectors = levels.map((level) => `
-<label>
-  <input type="checkbox" id="level.${level}" checked onclick='displayLogs();' />
-  ${level}
-</label>
-      `).join("");
-      return Promise.resolve(
-        cycle.replyHtml(`<html><body>
-        ${selectors}
-<div style="border-radius: 10px; background: black; color: gray; padding: 10px;">
-<pre style="white-space: pre-wrap;" id="logs"></pre></div>
-<script>
-  const logs = ${JSON.stringify((await getLogs()).map((event) => ({...event, message: getLogEventAsHtml(event)})))};
-  const levels = ${JSON.stringify(levels)};
-  function displayLogs() {
-    const el = document.getElementById("logs");
-    el.innerHTML = "";
-    const levelSelections = {};
-    levels.forEach((level) => {
-      const c = document.getElementById("level." + level);
-      levelSelections[level] = c.checked;
-    });
-    logs.forEach((event) => {
-      if (!levelSelections[event.level]) return;
-      el.innerHTML += (event.message + "\\n");
-    });
-  }
-  displayLogs();
-</script>
-</body></html>
-`)
-      );
+    const serveLogEvents = async () => {
+      const htmlLogs = (await getLogs()).map((event) => ({
+        ...event,
+        message: getLogEventAsHtml(event)
+      }));
+      return Promise.resolve(cycle.replyStaticData(JSON.stringify(htmlLogs)));
+    };
+
+    const serveLog = () => {
+      const file = require.resolve("electrode-archetype-react-app-dev/lib/dev-admin/log.html");
+      return Promise.resolve(cycle.replyFile(file));
     };
 
     if (isHmrRequest) {
@@ -422,6 +400,8 @@ ${listDirectoryHtml(this.listAssetPath, outputPath)}
         this.memFsCwd,
         isMemFs
       ).catch(err => sendStaticServeError("reading webpack mem fs", err));
+    } else if (req.url.startsWith(this.logEventsUrl)) {
+      return serveLogEvents();
     } else if (req.url.startsWith(this.logUrl)) {
       return serveLog();
     } else if (req.url.startsWith(this.reporterUrl) || this.returnReporter) {
