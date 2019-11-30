@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { loadSubApp } from "subapp-web";
+import React, { useEffect } from "react";
+import { connect, Provider } from 'redux-bundler-react'
+import { reduxLoadSubApp } from "subapp-redux";
+import store from "../components/bundler";
 import { Fab, FormControl, Grid, InputLabel, Select, MenuItem, Typography } from '@material-ui/core';
 import CardGiftcard from '@material-ui/icons/CardGiftcard';
 import HouseOutlined from '@material-ui/icons/HouseOutlined';
 import LocalShippingOutlined from '@material-ui/icons/LocalShippingOutlined';
 import Menu from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/styles';
-import { fetchProduct, getItemId } from "../components/api";
+import { getItemId } from "../components/api";
 import Rating from '@material-ui/lab/Rating';
 import Gallery from "../components/gallery";
 import logo from "../components/logo.svg";
@@ -94,16 +96,19 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const [result, setResult] = useState();
+  const { allProducts } = props;
+  const id = getItemId();
+  const result = allProducts[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    fetchProduct(getItemId()).then(setResult);
-  });
-  if (!result) {
+    props.doFetchProduct(id);
+  }, [props.products]);
+  if (!result || !Object.keys(result).length) {
     return null;
   }
+
   const product = result.payload.products[result.payload.selected.product];
   const offer = result.payload.offers[product.offers[0]];
   const { price } = offer.pricesInfo.priceMap.CURRENT;
@@ -183,7 +188,20 @@ const Component = (props) => {
   );
 };
 
-export default loadSubApp({
+const ConnectedComponent = connect(
+  "doFetchProduct",
+  "selectAllProducts",
+  Component
+);
+
+const ProvisionedComponent = () => (
+  <Provider store={store}>
+    <ConnectedComponent />
+  </Provider>
+);
+
+export default reduxLoadSubApp({
   name: "Product",
-  Component,
+  reduxCreateStore: () => store,
+  Component: ProvisionedComponent,
 });

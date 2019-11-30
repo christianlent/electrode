@@ -1,8 +1,10 @@
-import React, {useEffect, useState} from "react";
-import { loadSubApp } from "subapp-web";
+import React, { useEffect } from "react";
+import { connect, Provider } from 'redux-bundler-react'
+import { reduxLoadSubApp } from "subapp-redux";
+import store from "../components/bundler";
 import { Breadcrumbs, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import { fetchProduct, getItemId } from "../components/api";
+import { getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
 
 const useStyles = makeStyles(makeImportant({
@@ -20,16 +22,19 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const [result, setResult ] = useState();
+  const { allProducts } = props;
+  const id = getItemId();
+  const result = allProducts[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    fetchProduct(getItemId()).then(setResult);
-  });
-  if (!result) {
+    props.doFetchProduct(id);
+  }, [props.products]);
+  if (!result || !Object.keys(result).length) {
     return null;
   }
+
   const product = result.payload.products[result.payload.selected.product];
   const { path } = product.productAttributes.productCategory;
   return (
@@ -44,7 +49,20 @@ const Component = (props) => {
   );
 };
 
-export default loadSubApp({
+const ConnectedComponent = connect(
+  "doFetchProduct",
+  "selectAllProducts",
+  Component
+);
+
+const ProvisionedComponent = () => (
+  <Provider store={store}>
+    <ConnectedComponent />
+  </Provider>
+);
+
+export default reduxLoadSubApp({
   name: "Breadcrumbs",
-  Component,
+  reduxCreateStore: () => store,
+  Component: ProvisionedComponent,
 });

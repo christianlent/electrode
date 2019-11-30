@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from "react";
-import { loadSubApp } from "subapp-web";
+import React, { useEffect } from "react";
+import { connect, Provider } from 'redux-bundler-react'
+import { reduxLoadSubApp } from "subapp-redux";
+import store from "../components/bundler";
 import { Button, Fab, Grid, LinearProgress, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import ThumbUpOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import Rating from '@material-ui/lab/Rating';
-import { fetchProduct, fetchReviews, getItemId } from "../components/api";
+import { getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
 import Review from "../components/review";
 
@@ -84,21 +86,21 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const [result, setResult ] = useState();
+  const { allReviews } = props;
+  const id = getItemId();
+  const result = allReviews[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    fetchProduct(getItemId())
-      .then((productResult) => {
-        const product = productResult.payload.products[productResult.payload.selected.product];
-        return fetchReviews(product.productId);
-      })
-      .then(setResult);
-  });
-  if (!result) {
+    props.doFetchReviews(id);
+  }, [props.products]);
+  if (!result || !Object.keys(result).length) {
     return null;
   }
+
+  //const { productId } = productResult.payload.products[productResult.payload.selected.product];
+
   const product = Object.values(result.payload.reviews)[0];
   const numberOfReviews = product.totalReviewCount;
   const averageRating = product.averageOverallRating;
@@ -183,7 +185,20 @@ const Component = (props) => {
   );
 };
 
-export default loadSubApp({
+const ConnectedComponent = connect(
+  "doFetchReviews",
+  "selectAllReviews",
+  Component
+);
+
+const ProvisionedComponent = () => (
+  <Provider store={store}>
+    <ConnectedComponent />
+  </Provider>
+);
+
+export default reduxLoadSubApp({
   name: "Reviews",
-  Component,
+  reduxCreateStore: () => store,
+  Component: ProvisionedComponent,
 });
