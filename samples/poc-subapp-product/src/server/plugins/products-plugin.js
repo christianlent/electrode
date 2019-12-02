@@ -1,4 +1,4 @@
-import { fetchJSON } from "@walmart/electrode-fetch";
+import fetch from "node-fetch";
 
 function getServiceEndpoint(type) {
   return `https://www.walmart.com/terra-firma/fetch?rgs=${type}`;
@@ -11,8 +11,8 @@ const plugin = {
     server.route({
       method: "GET",
       path: `${options.apiBase ? options.apiBase : "/api/"}review`,
-      handler: (req) => {
-        return fetchJSON(getServiceEndpoint("REVIEWS_MAP"), {
+      handler: async (req) => {
+        const response = await fetch(getServiceEndpoint("REVIEWS_MAP"), {
             body: JSON.stringify({
               itemId: req.query.itemId,
               "paginationContext": {},
@@ -25,14 +25,15 @@ const plugin = {
               "Content-Type": "application/json",
             }
           });
+        return await response.json();
       }
     });
 
     server.route({
         method: "GET",
         path: `${options.apiBase ? options.apiBase : "/api/"}product`,
-        handler: (req) => {
-          return fetchJSON(getServiceEndpoint("PRODUCT"), {
+        handler: async (req) => {
+          const response = await fetch(getServiceEndpoint("PRODUCT"), {
               body: JSON.stringify({
                 btvId: req.query.itemId,
                 "paginationContext": {},
@@ -45,6 +46,7 @@ const plugin = {
                 "Content-Type": "application/json",
               }
             });
+          return await response.json();
         }
       });
     }

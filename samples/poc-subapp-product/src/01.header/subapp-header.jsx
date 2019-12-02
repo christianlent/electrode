@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { loadSubApp } from "subapp-web";
 import logo from "../components/logo.svg";
 import Menu from '@material-ui/icons/Menu';
-import FastFoodOutlined from '@material-ui/icons/FastFoodOutlined';
+import FastfoodOutlined from '@material-ui/icons/FastfoodOutlined';
 import PermIdentityOutlined from '@material-ui/icons/PermIdentityOutlined';
 import PersonPin from '@material-ui/icons/PersonPin';
 import Search from '@material-ui/icons/Search';
@@ -57,7 +57,7 @@ const Component = () => {
         />
         <div style={{float: "right"}}>
           <a href="https://grocery.walmart.com" style={{display: "inline-block", lineHeight: "44px", marginRight: 25}}>
-            <FastFoodOutlined style={{color: "white", verticalAlign: "middle"}} />
+            <FastfoodOutlined style={{color: "white", verticalAlign: "middle"}} />
           </a>
           <a href="https://www.walmart.com/accountlogo" style={{display: "inline-block", lineHeight: "44px", marginRight: 25}}>
             <PermIdentityOutlined style={{color: "white", verticalAlign: "middle"}} />
