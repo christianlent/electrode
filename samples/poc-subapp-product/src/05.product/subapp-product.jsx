@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect, Provider } from 'redux-bundler-react'
 import { reduxLoadSubApp } from "subapp-redux";
-import store from "../components/bundler";
+import { createStore } from "../components/bundler";
 import { Fab, FormControl, Grid, InputLabel, Select, MenuItem, Typography } from '@material-ui/core';
 import CardGiftcard from '@material-ui/icons/CardGiftcard';
 import HouseOutlined from '@material-ui/icons/HouseOutlined';
@@ -202,6 +202,7 @@ const ProvisionedComponent = () => (
 
 export default reduxLoadSubApp({
   name: "Product",
-  reduxCreateStore: () => store,
+  reduxCreateStore: createStore,
+  reduxShareStore: true,
   Component: ProvisionedComponent,
 });

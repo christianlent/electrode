@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect, Provider } from 'redux-bundler-react'
 import { reduxLoadSubApp } from "subapp-redux";
-import store from "../components/bundler";
+import { createStore } from "../components/bundler";
 import { Breadcrumbs, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { getItemId } from "../components/api";
@@ -63,6 +63,7 @@ const ProvisionedComponent = () => (
 
 export default reduxLoadSubApp({
   name: "Breadcrumbs",
-  reduxCreateStore: () => store,
+  reduxCreateStore: createStore,
+  reduxShareStore: true,
   Component: ProvisionedComponent,
 });

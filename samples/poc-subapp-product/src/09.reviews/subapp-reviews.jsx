@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect, Provider } from 'redux-bundler-react'
 import { reduxLoadSubApp } from "subapp-redux";
-import store from "../components/bundler";
+import { createStore } from "../components/bundler";
 import { Button, Fab, Grid, LinearProgress, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import ThumbUpOutlined from '@material-ui/icons/ThumbUpAltOutlined';
@@ -199,6 +199,7 @@ const ProvisionedComponent = () => (
 
 export default reduxLoadSubApp({
   name: "Reviews",
-  reduxCreateStore: () => store,
+  reduxCreateStore: createStore,
+  reduxShareStore: true,
   Component: ProvisionedComponent,
 });
