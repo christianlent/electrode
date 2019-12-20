@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { reduxLoadSubApp } from "subapp-redux";
-import { createStore, withReduxBundler } from "../components/bundler";
+import { connect } from "react-redux";
 import { Fab, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
+import { fetchProduct } from "../components/redux-product/actions";
+import reduxCreateStore from "../components/store";
+import reduxReducers from "./reducers";
 
 const useStyles = makeStyles(makeImportant({
   add: {
@@ -32,14 +35,14 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const { allProducts } = props;
+  const { allProducts, dispatch } = props;
   const id = getItemId();
   const result = allProducts[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    props.doFetchProduct(id);
+    dispatch(fetchProduct(id));
   }, [props.products]);
   if (!result || !Object.keys(result).length) {
     return null;
@@ -95,11 +98,8 @@ const Component = (props) => {
 
 export default reduxLoadSubApp({
   name: "Offers",
-  reduxCreateStore: createStore,
+  reduxCreateStore: reduxCreateStore(reduxReducers),
+  reduxReducers,
   reduxShareStore: true,
-  Component: withReduxBundler(
-    "doFetchProduct",
-    "selectAllProducts",
-    Component
-  ),
+  Component: connect((state) => ({allProducts: state.products}))(Component),
 });

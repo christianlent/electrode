@@ -1,7 +1,7 @@
 import {FETCH_PRODUCT, FETCH_PRODUCT_SUCCESS} from "./types";
 
 export const fetchProduct = (id) => {
-  return async ({ dispatch, getState }) => {
+  return async (dispatch, getState) => {
     const state = getState();
     if (state.products[id]) {
       return;

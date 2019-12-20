@@ -5,7 +5,7 @@ export default {
   name: "products",
   init: () => {},
   doFetchProduct: fetchProduct,
-  reducer,
+  reducer: ({dispatch, getState}) => reducer(dispatch, getState),
 
   selectAllProducts: (state) => {
     return state.products;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { reduxLoadSubApp } from "subapp-redux";
-import { createStore, withReduxBundler } from "../components/bundler";
+import { connect } from "react-redux";
 import { Button, Fab, Grid, LinearProgress, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import ThumbUpOutlined from "@material-ui/icons/ThumbUpAltOutlined";
@@ -8,6 +8,9 @@ import Rating from "@material-ui/lab/Rating";
 import { getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
 import Review from "../components/review";
+import { fetchReviews } from "../components/redux-reviews/actions";
+import reduxCreateStore from "../components/store";
+import reduxReducers from "./reducers";
 
 const useStyles = makeStyles(makeImportant({
   add: {
@@ -85,14 +88,14 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const { allReviews } = props;
+  const { allReviews, dispatch } = props;
   const id = getItemId();
   const result = allReviews[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    props.doFetchReviews(id);
+    dispatch(fetchReviews(id));
   }, [props.products]);
   if (!result || !Object.keys(result).length) {
     return null;
@@ -186,11 +189,8 @@ const Component = (props) => {
 
 export default reduxLoadSubApp({
   name: "Reviews",
-  reduxCreateStore: createStore,
-  reduxShareStore: true,
-  Component: withReduxBundler(
-    "doFetchReviews",
-    "selectAllReviews",
-    Component
-  ),
+  reduxCreateStore: reduxCreateStore(reduxReducers),
+  reduxReducers,
+  reduxShareStore: "reviews",
+  Component: connect((state) => ({allReviews: state.reviews}))(Component),
 });

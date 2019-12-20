@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { reduxLoadSubApp } from "subapp-redux";
-import { createStore, withReduxBundler } from "../components/bundler";
-import { Fab, FormControl, Grid, InputLabel, Select, MenuItem, Typography } from "@material-ui/core";
+import { connect } from "react-redux";
+import { Fab, FormControl, Grid, InputLabel, Modal, Select, MenuItem, Typography } from "@material-ui/core";
 import CardGiftcard from "@material-ui/icons/CardGiftcard";
 import HouseOutlined from "@material-ui/icons/HouseOutlined";
 import LocalShippingOutlined from "@material-ui/icons/LocalShippingOutlined";
@@ -12,6 +12,10 @@ import Rating from "@material-ui/lab/Rating";
 import Gallery from "../components/gallery";
 import logo from "../components/logo.svg";
 import { makeImportant } from "../components/global";
+import { fetchProduct } from "../components/redux-product/actions";
+import reduxCreateStore from "../components/store";
+import reduxReducers from "./reducers";
+import { dynamicLoadSubApp } from "subapp-web";
 
 function slugify(text) {
   return text.toString().toLowerCase()
@@ -93,16 +97,27 @@ const useStyles = makeStyles(makeImportant({
   }
 }));
 
+const DeliveryOptionsModal = (props) => {
+  const id = "delivery_01";
+  dynamicLoadSubApp({ name: "Delivery", id });
+  return (
+    <Modal open={true} {...props}>
+      <div id={id} />
+    </Modal>
+  );
+}
+
 const Component = (props) => {
+  const [modal, setModal] = useState(false);
   const classes = useStyles();
-  const { allProducts } = props;
+  const { allProducts, dispatch } = props;
   const id = getItemId();
   const result = allProducts[id];
   useEffect(() => {
     if (result) {
       return;
     }
-    props.doFetchProduct(id);
+    dispatch(fetchProduct(id));
   }, [props.products]);
   if (!result || !Object.keys(result).length) {
     return null;
@@ -113,6 +128,9 @@ const Component = (props) => {
   const { price } = offer.pricesInfo.priceMap.CURRENT;
   return (
     <Grid container justify="center" className={classes.main}>
+      {modal &&
+        <DeliveryOptionsModal onClose={() => setModal(false)} />
+      }
       <Grid item xs={12} md={4} lg={4}>
         <Gallery result={result} />
       </Grid>
@@ -165,7 +183,7 @@ const Component = (props) => {
           </p>
         </div>
         <div className={classes.section}>
-          <a href="#" className={classes.link}>More delivery &amp; pickup options</a>
+          <a href="#" className={classes.link} onClick={() => setModal(true)}>More delivery &amp; pickup options</a>
         </div>
         <div className={classes.section}>
           <img src={logo} className={classes.detailIcon} />
@@ -189,11 +207,8 @@ const Component = (props) => {
 
 export default reduxLoadSubApp({
   name: "Product",
-  reduxCreateStore: createStore,
+  reduxCreateStore: reduxCreateStore(reduxReducers),
+  reduxReducers,
   reduxShareStore: true,
-  Component: withReduxBundler(
-    "doFetchProduct",
-    "selectAllProducts",
-    Component
-  ),
+  Component: connect((state) => ({allProducts: state.products}))(Component),
 });
