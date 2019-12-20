@@ -7,10 +7,14 @@ export { default as makeSubAppSpec } from "./make-subapp-spec";
 export { default as AppContext } from "./app-context";
 
 export function defaultRenderStart(Component, ssr, element, props) {
-  if (ssr) {
-    hydrate(<Component {...props} />, element);
+  if (element) {
+    if (ssr) {
+      hydrate(<Component {...props} />, element);
+    } else {
+      render(<Component {...props} />, element);
+    }
   } else {
-    render(<Component {...props} />, element);
+    return <Component {...props} />;
   }
 }
 
@@ -45,7 +49,7 @@ export function loadSubApp(info, renderStart) {
         this.info.StartComponent || this.info.Component,
         options.serverSideRendering,
         element,
-        options._prepared
+        { ...options._prepared, ...options.props }
       );
     };
 
@@ -64,9 +68,10 @@ export function loadSubApp(info, renderStart) {
       } else {
         instance.element = element;
       }
+      console.log("rendering subapp", name, "into", element);
     } else {
-      console.error(`Starting subapp ${name} without options.id`);
-      return undefined;
+      // inline rendering, no instance
+      instance = { props: options.props };
     }
 
     const callStart = () => {
@@ -76,7 +81,6 @@ export function loadSubApp(info, renderStart) {
         return subApp.info.start(instance, element);
       }
 
-      console.log("rendering subapp", name, "into", element);
       return subApp._renderStart(instance, element);
     };
 
@@ -105,24 +109,35 @@ export function loadSubApp(info, renderStart) {
   return info;
 }
 
-export function dynamicLoadSubApp(options) {
+export function dynamicLoadSubApp({ name, id, timeout = 15000, onLoad, onError }) {
   // TODO: timeout and callback
   const wsa = window.webSubApps;
-  const lname = options.name.toLowerCase();
+  const lname = name.toLowerCase();
 
   if (wsa._bundles[lname] === undefined) {
     window.loadSubAppBundles(lname);
   }
+  const startTime = Date.now();
 
   const load = delay => {
     setTimeout(() => {
-      const subApp = wsa[options.name];
-      const element = document.getElementById(options.id);
-      if (element && subApp && subApp.start) {
-        subApp.start({ id: options.id });
-      } else {
-        load(50);
+      const subApp = wsa[name];
+      if (subApp) {
+        if (!id) {
+          return onLoad();
+        } else {
+          const element = document.getElementById(id);
+          if (element && subApp.start) {
+            return subApp.start({ id });
+          }
+        }
       }
+
+      if (timeout > 50 && Date.now() - startTime > timeout) {
+        return onError(new Error("dynamicLoadSubApp Timeout"));
+      }
+
+      return load(50);
     }, delay);
   };
 
