@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { reduxLoadSubApp } from "subapp-redux";
-import { connect } from "react-redux";
 import { Fab, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import { getItemId } from "../components/api";
 import { makeImportant } from "../components/global";
-import { fetchProduct } from "../components/redux-product/actions";
+import ProductInjector from "../components/redux-product/injector";
 import reduxCreateStore from "../components/store";
 import reduxReducers from "./reducers";
 
@@ -35,15 +33,8 @@ const useStyles = makeStyles(makeImportant({
 
 const Component = (props) => {
   const classes = useStyles();
-  const { allProducts, dispatch } = props;
-  const id = getItemId();
-  const result = allProducts[id];
-  useEffect(() => {
-    if (result) {
-      return;
-    }
-    dispatch(fetchProduct(id));
-  }, [props.products]);
+  const { product: result } = props;
+
   if (!result || !Object.keys(result).length) {
     return null;
   }
@@ -101,5 +92,5 @@ export default reduxLoadSubApp({
   reduxCreateStore: reduxCreateStore(reduxReducers),
   reduxReducers,
   reduxShareStore: true,
-  Component: connect((state) => ({allProducts: state.products}))(Component),
+  Component: ProductInjector(Component),
 });

@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { reduxLoadSubApp } from "subapp-redux";
-import { connect } from "react-redux";
 import { Fab, FormControl, Grid, InputLabel, Modal, Select, MenuItem, Typography } from "@material-ui/core";
 import CardGiftcard from "@material-ui/icons/CardGiftcard";
 import HouseOutlined from "@material-ui/icons/HouseOutlined";
 import LocalShippingOutlined from "@material-ui/icons/LocalShippingOutlined";
 import Menu from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/styles";
-import { getItemId } from "../components/api";
 import Rating from "@material-ui/lab/Rating";
 import Gallery from "../components/gallery";
 import logo from "../components/logo.svg";
 import { makeImportant } from "../components/global";
-import { fetchProduct } from "../components/redux-product/actions";
 import reduxCreateStore from "../components/store";
+import ProductInjector from "../components/redux-product/injector";
 import reduxReducers from "./reducers";
 import { dynamicLoadSubApp } from "subapp-web";
 
@@ -110,15 +108,8 @@ const DeliveryOptionsModal = (props) => {
 const Component = (props) => {
   const [modal, setModal] = useState(false);
   const classes = useStyles();
-  const { allProducts, dispatch } = props;
-  const id = getItemId();
-  const result = allProducts[id];
-  useEffect(() => {
-    if (result) {
-      return;
-    }
-    dispatch(fetchProduct(id));
-  }, [props.products]);
+  const { product: result } = props;
+
   if (!result || !Object.keys(result).length) {
     return null;
   }
@@ -210,5 +201,5 @@ export default reduxLoadSubApp({
   reduxCreateStore: reduxCreateStore(reduxReducers),
   reduxReducers,
   reduxShareStore: true,
-  Component: connect((state) => ({allProducts: state.products}))(Component),
+  Component: ProductInjector(Component),
 });
