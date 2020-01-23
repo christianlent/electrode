@@ -4,7 +4,7 @@ import { loadSubApp } from "subapp-web";
 import { Provider } from "redux-bundler-preact";
 import { setStoreContainer, getReduxCreateStore } from "./shared";
 
-setStoreContainer(typeof window === "undefined" ? global : window);
+setStoreContainer(window);
 
 //
 // client side function to start a subapp with redux-bundler support

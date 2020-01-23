@@ -5,6 +5,7 @@
 const assert = require("assert");
 const preact = require("preact");
 const { default: AppContext } = require("../dist/node/app-context");
+const { setStoreContainer } = require("../dist/node/shared");
 const prts = require("preact-render-to-string");
 const { Provider } = require("redux-bundler-preact");
 
@@ -94,6 +95,8 @@ class FrameworkLib {
   async doReduxBundlerSSR() {
     const { subApp, subAppServer, context, options } = this.ref;
     const { request } = context.user;
+    request.reduxStores = {};
+    setStoreContainer(request.reduxStores);
     // subApp.reduxReducers || subApp.reduxCreateStore) {
     // if sub app has reduxReducers or reduxCreateStore then assume it's using
     // redux data model.  prepare initial state and store to render it.
