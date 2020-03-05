@@ -83,17 +83,30 @@ class DynSubApp extends Component {
   }
 }
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home Page - test hello world</h1>
-      <SubApp name="Group1A" />
-      <SubApp name="Group1B" />
-      <SubApp name="Demo1" />
-      <DynSubApp name="Demo2" />
-    </div>
-  );
-};
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showDemo2: true };
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({ showDemo2: !this.state.showDemo2 });
+    }, 2000);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Home Page - test hello world{this.state.showDemo2 && " - Now including Demo 2!"}</h1>
+        <SubApp name="Group1A" />
+        <SubApp name="Group1B" />
+        <SubApp name="Demo1" />
+        {this.state.showDemo2 && <DynSubApp name="Demo2" />}
+      </div>
+    );
+  }
+}
 
 export default reduxBundlerLoadSubApp({
   name: "Home",
